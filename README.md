@@ -1,2 +1,9 @@
-# SELF-BALANCING-ROBOT-MAIN
-This is going to be our MAIN repository for the self balancing robot, so there will be others for other files. 
+# SELF Balancing Robot
+
+## Design
+
+### Software Diagram
+_link// insert here_
+### Hardware Diagram
+_link// insert here_
+
