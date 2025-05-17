@@ -8,12 +8,12 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/include",
-                "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/src",
+                "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/include",
+                "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/src",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/include",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/deprecated_include",
-                "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/config",
+                "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/platform_include",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/config/include",
                 "C:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/config/include/freertos",
@@ -175,12 +175,12 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/include",
-                    "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/src",
+                    "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/include",
+                    "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/src",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/include",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/deprecated_include",
-                    "C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/config",
+                    "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/platform_include",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/config/include",
                     "C:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/config/include/freertos",

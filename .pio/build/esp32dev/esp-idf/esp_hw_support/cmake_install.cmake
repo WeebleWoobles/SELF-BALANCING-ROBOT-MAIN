@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 

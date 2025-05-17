@@ -58,7 +58,7 @@ build menuconfig: phony CMakeFiles/menuconfig
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -124,7 +124,7 @@ build CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj: C_COMPILER__boo
 
 build bootloader.elf: C_EXECUTABLE_LINKER__bootloader.2eelf CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj | esp-idf/xtensa/libxtensa.a esp-idf/soc/libsoc.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/hal/libhal.a esp-idf/spi_flash/libspi_flash.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_system/libesp_system.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_common/libesp_common.a esp-idf/esp_rom/libesp_rom.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/xtensa/libxtensa.a esp-idf/soc/libsoc.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/hal/libhal.a esp-idf/spi_flash/libspi_flash.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_system/libesp_system.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_common/libesp_common.a esp-idf/esp_rom/libesp_rom.a esp-idf/log/liblog.a esp-idf/xtensa/libxtensa.a esp-idf/soc/libsoc.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/hal/libhal.a esp-idf/spi_flash/libspi_flash.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_system/libesp_system.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_common/libesp_common.a esp-idf/esp_rom/libesp_rom.a esp-idf/log/liblog.a esp-idf/xtensa/libxtensa.a esp-idf/soc/libsoc.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/hal/libhal.a esp-idf/spi_flash/libspi_flash.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_system/libesp_system.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_common/libesp_common.a esp-idf/esp_rom/libesp_rom.a esp-idf/log/liblog.a esp-idf/xtensa/libxtensa.a esp-idf/soc/libsoc.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/hal/libhal.a esp-idf/spi_flash/libspi_flash.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_system/libesp_system.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_common/libesp_common.a esp-idf/esp_rom/libesp_rom.a esp-idf/log/liblog.a C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/esp32/libxt_hal.a C$:/Users/hiram/.platformio/packages/framework-espidf/components/soc/esp32/ld/esp32.peripherals.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.api.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/ld/esp32/bootloader.ld C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld || _project_elf_src esp-idf/main/libmain.a esp-idf/xtensa/libxtensa.a
   FLAGS = -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
-  LINK_FLAGS = -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32=0 -Wl,--Map=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32.rom.ld -T esp32.rom.api.ld -T esp32.rom.libgcc.ld -T esp32.rom.newlib-funcs.ld -T esp32.peripherals.ld -T bootloader.ld -T bootloader.rom.ld
+  LINK_FLAGS = -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32=0 -Wl,--Map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32.rom.ld -T esp32.rom.api.ld -T esp32.rom.libgcc.ld -T esp32.rom.newlib-funcs.ld -T esp32.peripherals.ld -T bootloader.ld -T bootloader.rom.ld
   LINK_LIBRARIES = esp-idf/xtensa/libxtensa.a  esp-idf/soc/libsoc.a  esp-idf/micro-ecc/libmicro-ecc.a  esp-idf/hal/libhal.a  esp-idf/spi_flash/libspi_flash.a  esp-idf/esp_bootloader_format/libesp_bootloader_format.a  esp-idf/bootloader_support/libbootloader_support.a  esp-idf/efuse/libefuse.a  esp-idf/esp_system/libesp_system.a  esp-idf/esp_hw_support/libesp_hw_support.a  esp-idf/esp_common/libesp_common.a  esp-idf/esp_rom/libesp_rom.a  esp-idf/log/liblog.a  esp-idf/main/libmain.a  esp-idf/xtensa/libxtensa.a  esp-idf/soc/libsoc.a  esp-idf/micro-ecc/libmicro-ecc.a  esp-idf/hal/libhal.a  esp-idf/spi_flash/libspi_flash.a  esp-idf/esp_bootloader_format/libesp_bootloader_format.a  esp-idf/bootloader_support/libbootloader_support.a  esp-idf/efuse/libefuse.a  esp-idf/esp_system/libesp_system.a  esp-idf/esp_hw_support/libesp_hw_support.a  esp-idf/esp_common/libesp_common.a  esp-idf/esp_rom/libesp_rom.a  esp-idf/log/liblog.a  esp-idf/xtensa/libxtensa.a  esp-idf/soc/libsoc.a  esp-idf/micro-ecc/libmicro-ecc.a  esp-idf/hal/libhal.a  esp-idf/spi_flash/libspi_flash.a  esp-idf/esp_bootloader_format/libesp_bootloader_format.a  esp-idf/bootloader_support/libbootloader_support.a  esp-idf/efuse/libefuse.a  esp-idf/esp_system/libesp_system.a  esp-idf/esp_hw_support/libesp_hw_support.a  esp-idf/esp_common/libesp_common.a  esp-idf/esp_rom/libesp_rom.a  esp-idf/log/liblog.a  esp-idf/xtensa/libxtensa.a  esp-idf/soc/libsoc.a  esp-idf/micro-ecc/libmicro-ecc.a  esp-idf/hal/libhal.a  esp-idf/spi_flash/libspi_flash.a  esp-idf/esp_bootloader_format/libesp_bootloader_format.a  esp-idf/bootloader_support/libbootloader_support.a  esp-idf/efuse/libefuse.a  esp-idf/esp_system/libesp_system.a  esp-idf/esp_hw_support/libesp_hw_support.a  esp-idf/esp_common/libesp_common.a  esp-idf/esp_rom/libesp_rom.a  esp-idf/log/liblog.a  esp-idf/xtensa/libxtensa.a  esp-idf/soc/libsoc.a  esp-idf/micro-ecc/libmicro-ecc.a  esp-idf/hal/libhal.a  esp-idf/spi_flash/libspi_flash.a  esp-idf/esp_bootloader_format/libesp_bootloader_format.a  esp-idf/bootloader_support/libbootloader_support.a  esp-idf/efuse/libefuse.a  esp-idf/esp_system/libesp_system.a  esp-idf/esp_hw_support/libesp_hw_support.a  esp-idf/esp_common/libesp_common.a  esp-idf/esp_rom/libesp_rom.a  esp-idf/log/liblog.a  C:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/esp32/libxt_hal.a  -u esp_dport_access_reg_read  -u __assert_func  -u esp_bootloader_desc  -u abort  -u __ubsan_include  -u esp_system_include_startup_funcs  -u bootloader_hooks_include
   LINK_PATH = -LC:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld   -LC:/Users/hiram/.platformio/packages/framework-espidf/components/soc/esp32/ld   -LC:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/ld/esp32
   OBJECT_DIR = CMakeFiles\bootloader.elf.dir
@@ -169,7 +169,7 @@ build uf2-app: phony CMakeFiles/uf2-app
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -181,7 +181,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Custom command for CMakeFiles\confserver
 
 build CMakeFiles/confserver: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfserver --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfserver --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev"
   pool = console
 
 
@@ -203,7 +203,7 @@ build CMakeFiles/app: phony || _project_elf_src bootloader.elf esp-idf/bootloade
 # Custom command for CMakeFiles\menuconfig
 
 build CMakeFiles/menuconfig: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/check_term.py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E env COMPONENT_KCONFIGS_SOURCE_FILE=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev IDF_TARGET=esp32 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe -m menuconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/check_term.py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E env COMPONENT_KCONFIGS_SOURCE_FILE=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev IDF_TARGET=esp32 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe -m menuconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev"
   pool = console
 
 
@@ -211,7 +211,7 @@ build CMakeFiles/menuconfig: CUSTOM_COMMAND
 # Custom command for CMakeFiles\save-defconfig
 
 build CMakeFiles/save-defconfig: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev --env-file C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/config.env --dont-write-deprecated --output savedefconfig C:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/sdkconfig.defaults"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe -m kconfgen --list-separator=semicolon --kconfig C:/Users/hiram/.platformio/packages/framework-espidf/Kconfig --sdkconfig-rename C:/Users/hiram/.platformio/packages/framework-espidf/sdkconfig.rename --config C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev --env-file C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config.env --dont-write-deprecated --output savedefconfig C:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/sdkconfig.defaults"
   pool = console
 
 
@@ -225,7 +225,7 @@ build CMakeFiles/gen_project_binary: phony .bin_timestamp || _project_elf_src bo
 # Custom command for .bin_timestamp
 
 build .bin_timestamp: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB --min-rev-full 0 --max-rev-full 399 -o C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.bin C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.elf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "Generated C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.bin" && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E md5sum C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.bin > C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/.bin_timestamp"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB --min-rev-full 0 --max-rev-full 399 -o C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.bin C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.elf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "Generated C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.bin" && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E md5sum C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.bin > C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/.bin_timestamp"
   DESC = Generating binary image from built executable
   restat = 1
 
@@ -234,7 +234,7 @@ build .bin_timestamp: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootload
 # Custom command for CMakeFiles\merge-bin
 
 build CMakeFiles/merge-bin: CUSTOM_COMMAND C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/bootloader || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a gen_project_binary
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\.platformio\packages\framework-espidf\components\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D SERIAL_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;;C:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=merge_bin;-o;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/merged-binary.bin;@C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/flash_args -D WORKING_DIRECTORY=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader -P run_serial_tool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\.platformio\packages\framework-espidf\components\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D SERIAL_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;;C:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=merge_bin;-o;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/merged-binary.bin;@C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/flash_args -D WORKING_DIRECTORY=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader -P run_serial_tool.cmake"
   pool = console
 
 
@@ -242,7 +242,7 @@ build CMakeFiles/merge-bin: CUSTOM_COMMAND C$:/Users/hiram/.platformio/packages/
 # Custom command for CMakeFiles\monitor
 
 build CMakeFiles/monitor: CUSTOM_COMMAND || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\.platformio\packages\framework-espidf\components\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D SERIAL_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_monitor -D SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32-elf-;;--target;esp32;;--revision;0;;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.elf -D WORKING_DIRECTORY=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader -P run_serial_tool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\.platformio\packages\framework-espidf\components\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D SERIAL_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_monitor -D SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32-elf-;;--target;esp32;;--revision;0;;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.elf -D WORKING_DIRECTORY=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader -P run_serial_tool.cmake"
   pool = console
 
 
@@ -256,7 +256,7 @@ build CMakeFiles/_project_elf_src: phony project_elf_src_esp32.c
 # Custom command for project_elf_src_esp32.c
 
 build project_elf_src_esp32.c: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E touch C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/project_elf_src_esp32.c"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E touch C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/project_elf_src_esp32.c"
   DESC = Generating project_elf_src_esp32.c
   restat = 1
 
@@ -265,7 +265,7 @@ build project_elf_src_esp32.c: CUSTOM_COMMAND
 # Custom command for CMakeFiles\size
 
 build CMakeFiles/size: CUSTOM_COMMAND bootloader.map
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D MAP_FILE=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D MAP_FILE=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
   pool = console
 
 
@@ -273,7 +273,7 @@ build CMakeFiles/size: CUSTOM_COMMAND bootloader.map
 # Custom command for CMakeFiles\size-files
 
 build CMakeFiles/size-files: CUSTOM_COMMAND bootloader.map
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D IDF_SIZE_MODE=--files -D MAP_FILE=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D IDF_SIZE_MODE=--files -D MAP_FILE=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
   pool = console
 
 
@@ -281,7 +281,7 @@ build CMakeFiles/size-files: CUSTOM_COMMAND bootloader.map
 # Custom command for CMakeFiles\size-components
 
 build CMakeFiles/size-components: CUSTOM_COMMAND bootloader.map
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D IDF_SIZE_MODE=--archives -D MAP_FILE=C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;-m;esp_idf_size -D IDF_SIZE_MODE=--archives -D MAP_FILE=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.map -D OUTPUT_JSON= -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_size_tool.cmake"
   pool = console
 
 
@@ -289,7 +289,7 @@ build CMakeFiles/size-components: CUSTOM_COMMAND bootloader.map
 # Custom command for CMakeFiles\uf2
 
 build CMakeFiles/uf2: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D UF2_CMD=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;C:/Users/hiram/.platformio/packages/framework-espidf/tools/mkuf2.py;write;--chip;esp32 -D UF2_ARGS=--json;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/flasher_args.json;-o;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/uf2.bin -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_uf2_cmds.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D UF2_CMD=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;C:/Users/hiram/.platformio/packages/framework-espidf/tools/mkuf2.py;write;--chip;esp32 -D UF2_ARGS=--json;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/flasher_args.json;-o;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/uf2.bin -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_uf2_cmds.cmake"
   pool = console
 
 
@@ -297,7 +297,7 @@ build CMakeFiles/uf2: CUSTOM_COMMAND
 # Custom command for CMakeFiles\uf2-app
 
 build CMakeFiles/uf2-app: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D UF2_CMD=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;C:/Users/hiram/.platformio/packages/framework-espidf/tools/mkuf2.py;write;--chip;esp32 -D UF2_ARGS=--json;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/flasher_args.json;-o;C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/uf2-app.bin;--bin;app -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_uf2_cmds.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -D IDF_PATH=C:/Users/hiram/.platformio/packages/framework-espidf -D UF2_CMD=C:/Users/hiram/.platformio/penv/.espidf-5.4.0/Scripts/python.exe;C:/Users/hiram/.platformio/packages/framework-espidf/tools/mkuf2.py;write;--chip;esp32 -D UF2_ARGS=--json;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/flasher_args.json;-o;C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/uf2-app.bin;--bin;app -P C:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/run_uf2_cmds.cmake"
   pool = console
 
 # =============================================================================
@@ -310,7 +310,7 @@ build CMakeFiles/uf2-app: CUSTOM_COMMAND
 # Utility command for edit_cache
 
 build esp-idf/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -322,7 +322,7 @@ build esp-idf/edit_cache: phony esp-idf/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -385,7 +385,7 @@ build esp-idf/xtensa/libxtensa.a: C_STATIC_LIBRARY_LINKER____idf_xtensa esp-idf/
 # Utility command for edit_cache
 
 build esp-idf/xtensa/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\xtensa && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\xtensa && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -397,7 +397,7 @@ build esp-idf/xtensa/edit_cache: phony esp-idf/xtensa/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/xtensa/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\xtensa && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\xtensa && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -414,7 +414,7 @@ build esp-idf/xtensa/rebuild_cache: phony esp-idf/xtensa/CMakeFiles/rebuild_cach
 # Utility command for edit_cache
 
 build esp-idf/newlib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\newlib && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\newlib && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -426,7 +426,7 @@ build esp-idf/newlib/edit_cache: phony esp-idf/newlib/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/newlib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\newlib && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\newlib && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -729,7 +729,7 @@ build esp-idf/soc/libsoc.a: C_STATIC_LIBRARY_LINKER____idf_soc esp-idf/soc/CMake
 # Utility command for edit_cache
 
 build esp-idf/soc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\soc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\soc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -741,7 +741,7 @@ build esp-idf/soc/edit_cache: phony esp-idf/soc/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/soc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\soc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\soc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -794,7 +794,7 @@ build esp-idf/micro-ecc/libmicro-ecc.a: C_STATIC_LIBRARY_LINKER____idf_micro-ecc
 # Utility command for edit_cache
 
 build esp-idf/micro-ecc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\micro-ecc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\micro-ecc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -806,7 +806,7 @@ build esp-idf/micro-ecc/edit_cache: phony esp-idf/micro-ecc/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build esp-idf/micro-ecc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\micro-ecc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\micro-ecc && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -919,7 +919,7 @@ build esp-idf/hal/libhal.a: C_STATIC_LIBRARY_LINKER____idf_hal esp-idf/hal/CMake
 # Utility command for edit_cache
 
 build esp-idf/hal/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\hal && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\hal && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -931,7 +931,7 @@ build esp-idf/hal/edit_cache: phony esp-idf/hal/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/hal/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\hal && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\hal && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -984,7 +984,7 @@ build esp-idf/spi_flash/libspi_flash.a: C_STATIC_LIBRARY_LINKER____idf_spi_flash
 # Utility command for edit_cache
 
 build esp-idf/spi_flash/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\spi_flash && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\spi_flash && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -996,7 +996,7 @@ build esp-idf/spi_flash/edit_cache: phony esp-idf/spi_flash/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build esp-idf/spi_flash/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\spi_flash && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\spi_flash && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1049,7 +1049,7 @@ build esp-idf/esp_bootloader_format/libesp_bootloader_format.a: C_STATIC_LIBRARY
 # Utility command for edit_cache
 
 build esp-idf/esp_bootloader_format/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_bootloader_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_bootloader_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1061,7 +1061,7 @@ build esp-idf/esp_bootloader_format/edit_cache: phony esp-idf/esp_bootloader_for
 # Utility command for rebuild_cache
 
 build esp-idf/esp_bootloader_format/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_bootloader_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_bootloader_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1078,7 +1078,7 @@ build esp-idf/esp_bootloader_format/rebuild_cache: phony esp-idf/esp_bootloader_
 # Utility command for edit_cache
 
 build esp-idf/esp_app_format/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_app_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_app_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1090,7 +1090,7 @@ build esp-idf/esp_app_format/edit_cache: phony esp-idf/esp_app_format/CMakeFiles
 # Utility command for rebuild_cache
 
 build esp-idf/esp_app_format/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_app_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_app_format && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1363,7 +1363,7 @@ build esp-idf/bootloader_support/libbootloader_support.a: C_STATIC_LIBRARY_LINKE
 # Utility command for edit_cache
 
 build esp-idf/bootloader_support/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\bootloader_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\bootloader_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1375,7 +1375,7 @@ build esp-idf/bootloader_support/edit_cache: phony esp-idf/bootloader_support/CM
 # Utility command for rebuild_cache
 
 build esp-idf/bootloader_support/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\bootloader_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\bootloader_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1530,7 +1530,7 @@ build esp-idf/efuse/show-efuse-table: phony esp-idf/efuse/CMakeFiles/show-efuse-
 # Utility command for edit_cache
 
 build esp-idf/efuse/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1542,7 +1542,7 @@ build esp-idf/efuse/edit_cache: phony esp-idf/efuse/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/efuse/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1554,21 +1554,21 @@ build esp-idf/efuse/rebuild_cache: phony esp-idf/efuse/CMakeFiles/rebuild_cache.
 # Custom command for esp-idf\efuse\CMakeFiles\efuse_test_table
 
 build esp-idf/efuse/CMakeFiles/efuse_test_table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192"
 
 
 #############################################
 # Custom command for esp-idf\efuse\CMakeFiles\efuse-common-table
 
 build esp-idf/efuse/CMakeFiles/efuse-common-table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192"
 
 
 #############################################
 # Custom command for esp-idf\efuse\CMakeFiles\efuse_common_table
 
 build esp-idf/efuse/CMakeFiles/efuse_common_table: CUSTOM_COMMAND || esp-idf/efuse/efuse-common-table
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
   DESC = Warning: command "efuse_common_table" is deprecated. Have you wanted to run "efuse-common-table" instead?
 
 
@@ -1576,7 +1576,7 @@ build esp-idf/efuse/CMakeFiles/efuse_common_table: CUSTOM_COMMAND || esp-idf/efu
 # Custom command for esp-idf\efuse\CMakeFiles\show_efuse_table
 
 build esp-idf/efuse/CMakeFiles/show_efuse_table: CUSTOM_COMMAND || esp-idf/efuse/show-efuse-table
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
   DESC = Warning: command "show_efuse_table" is deprecated. Have you wanted to run "show-efuse-table" instead?
 
 
@@ -1584,7 +1584,7 @@ build esp-idf/efuse/CMakeFiles/show_efuse_table: CUSTOM_COMMAND || esp-idf/efuse
 # Custom command for esp-idf\efuse\CMakeFiles\efuse_custom_table
 
 build esp-idf/efuse/CMakeFiles/efuse_custom_table: CUSTOM_COMMAND || esp-idf/efuse/efuse-custom-table
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -E echo "
   DESC = Warning: command "efuse_custom_table" is deprecated. Have you wanted to run "efuse-custom-table" instead?
 
 
@@ -1592,7 +1592,7 @@ build esp-idf/efuse/CMakeFiles/efuse_custom_table: CUSTOM_COMMAND || esp-idf/efu
 # Custom command for esp-idf\efuse\CMakeFiles\show-efuse-table
 
 build esp-idf/efuse/CMakeFiles/show-efuse-table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192 --info"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\efuse && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/efuse_table_gen.py C:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192 --info"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1604,7 +1604,7 @@ build esp-idf/efuse/CMakeFiles/show-efuse-table: CUSTOM_COMMAND
 # Utility command for edit_cache
 
 build esp-idf/esp_security/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_security && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_security && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1616,7 +1616,7 @@ build esp-idf/esp_security/edit_cache: phony esp-idf/esp_security/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build esp-idf/esp_security/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_security && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_security && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1633,7 +1633,7 @@ build esp-idf/esp_security/rebuild_cache: phony esp-idf/esp_security/CMakeFiles/
 # Utility command for rebuild_cache
 
 build esp-idf/esp_system/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_system && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_system && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1681,7 +1681,7 @@ build esp-idf/esp_system/libesp_system.a: C_STATIC_LIBRARY_LINKER____idf_esp_sys
 # Utility command for edit_cache
 
 build esp-idf/esp_system/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_system && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_system && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1824,7 +1824,7 @@ build esp-idf/esp_hw_support/libesp_hw_support.a: C_STATIC_LIBRARY_LINKER____idf
 # Utility command for edit_cache
 
 build esp-idf/esp_hw_support/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1836,7 +1836,7 @@ build esp-idf/esp_hw_support/edit_cache: phony esp-idf/esp_hw_support/CMakeFiles
 # Utility command for rebuild_cache
 
 build esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1853,7 +1853,7 @@ build esp-idf/esp_hw_support/rebuild_cache: phony esp-idf/esp_hw_support/CMakeFi
 # Utility command for edit_cache
 
 build esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\port\esp32 && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\port\esp32 && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1865,7 +1865,7 @@ build esp-idf/esp_hw_support/port/esp32/edit_cache: phony esp-idf/esp_hw_support
 # Utility command for rebuild_cache
 
 build esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\port\esp32 && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\port\esp32 && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1882,7 +1882,7 @@ build esp-idf/esp_hw_support/port/esp32/rebuild_cache: phony esp-idf/esp_hw_supp
 # Utility command for edit_cache
 
 build esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\lowpower && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\lowpower && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1894,7 +1894,7 @@ build esp-idf/esp_hw_support/lowpower/edit_cache: phony esp-idf/esp_hw_support/l
 # Utility command for rebuild_cache
 
 build esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\lowpower && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_hw_support\lowpower && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1911,7 +1911,7 @@ build esp-idf/esp_hw_support/lowpower/rebuild_cache: phony esp-idf/esp_hw_suppor
 # Utility command for rebuild_cache
 
 build esp-idf/esp_common/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_common && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_common && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1959,7 +1959,7 @@ build esp-idf/esp_common/libesp_common.a: C_STATIC_LIBRARY_LINKER____idf_esp_com
 # Utility command for edit_cache
 
 build esp-idf/esp_common/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_common && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_common && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2082,7 +2082,7 @@ build esp-idf/esp_rom/libesp_rom.a: C_STATIC_LIBRARY_LINKER____idf_esp_rom esp-i
 # Utility command for edit_cache
 
 build esp-idf/esp_rom/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_rom && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_rom && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2094,7 +2094,7 @@ build esp-idf/esp_rom/edit_cache: phony esp-idf/esp_rom/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build esp-idf/esp_rom/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esp_rom && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esp_rom && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2167,7 +2167,7 @@ build esp-idf/log/liblog.a: C_STATIC_LIBRARY_LINKER____idf_log esp-idf/log/CMake
 # Utility command for edit_cache
 
 build esp-idf/log/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\log && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\log && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2179,7 +2179,7 @@ build esp-idf/log/edit_cache: phony esp-idf/log/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build esp-idf/log/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\log && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\log && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2202,7 +2202,7 @@ build esp-idf/esptool_py/bootloader_check_size: phony esp-idf/esptool_py/CMakeFi
 # Utility command for edit_cache
 
 build esp-idf/esptool_py/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2214,7 +2214,7 @@ build esp-idf/esptool_py/edit_cache: phony esp-idf/esptool_py/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build esp-idf/esptool_py/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2226,7 +2226,7 @@ build esp-idf/esptool_py/rebuild_cache: phony esp-idf/esptool_py/CMakeFiles/rebu
 # Custom command for esp-idf\esptool_py\CMakeFiles\bootloader_check_size
 
 build esp-idf/esptool_py/CMakeFiles/bootloader_check_size: CUSTOM_COMMAND || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a gen_project_binary
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/bootloader.bin"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\esptool_py && C:\Users\hiram\.platformio\penv\.espidf-5.4.0\Scripts\python.exe C:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/bootloader.bin"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2238,7 +2238,7 @@ build esp-idf/esptool_py/CMakeFiles/bootloader_check_size: CUSTOM_COMMAND || _pr
 # Utility command for edit_cache
 
 build esp-idf/partition_table/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\partition_table && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\partition_table && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2250,7 +2250,7 @@ build esp-idf/partition_table/edit_cache: phony esp-idf/partition_table/CMakeFil
 # Utility command for rebuild_cache
 
 build esp-idf/partition_table/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\partition_table && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\partition_table && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2267,7 +2267,7 @@ build esp-idf/partition_table/rebuild_cache: phony esp-idf/partition_table/CMake
 # Utility command for edit_cache
 
 build esp-idf/bootloader/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2279,7 +2279,7 @@ build esp-idf/bootloader/edit_cache: phony esp-idf/bootloader/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build esp-idf/bootloader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\bootloader && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2296,7 +2296,7 @@ build esp-idf/bootloader/rebuild_cache: phony esp-idf/bootloader/CMakeFiles/rebu
 # Utility command for edit_cache
 
 build esp-idf/freertos/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\freertos && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\freertos && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2308,7 +2308,7 @@ build esp-idf/freertos/edit_cache: phony esp-idf/freertos/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build esp-idf/freertos/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\freertos && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\freertos && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2325,7 +2325,7 @@ build esp-idf/freertos/rebuild_cache: phony esp-idf/freertos/CMakeFiles/rebuild_
 # Utility command for edit_cache
 
 build esp-idf/main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\main && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\main && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake-gui.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -2373,7 +2373,7 @@ build esp-idf/main/libmain.a: C_STATIC_LIBRARY_LINKER____idf_main esp-idf/main/C
 # Utility command for rebuild_cache
 
 build esp-idf/main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader\esp-idf\main && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader"
+  COMMAND = cmd.exe /C "cd /D C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader\esp-idf\main && C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -2461,175 +2461,175 @@ build show_efuse_table: phony esp-idf/efuse/show_efuse_table
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader
 
 build all: phony app bootloader.elf esp-idf/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf
 
 build esp-idf/all: phony esp-idf/xtensa/all esp-idf/newlib/all esp-idf/soc/all esp-idf/micro-ecc/all esp-idf/hal/all esp-idf/spi_flash/all esp-idf/esp_bootloader_format/all esp-idf/esp_app_format/all esp-idf/bootloader_support/all esp-idf/efuse/all esp-idf/esp_security/all esp-idf/esp_system/all esp-idf/esp_hw_support/all esp-idf/esp_common/all esp-idf/esp_rom/all esp-idf/log/all esp-idf/esptool_py/all esp-idf/partition_table/all esp-idf/bootloader/all esp-idf/freertos/all esp-idf/main/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/bootloader
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/bootloader
 
 build esp-idf/bootloader/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/bootloader_support
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/bootloader_support
 
 build esp-idf/bootloader_support/all: phony esp-idf/bootloader_support/libbootloader_support.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/efuse
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/efuse
 
 build esp-idf/efuse/all: phony esp-idf/efuse/libefuse.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_app_format
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_app_format
 
 build esp-idf/esp_app_format/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_bootloader_format
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_bootloader_format
 
 build esp-idf/esp_bootloader_format/all: phony esp-idf/esp_bootloader_format/libesp_bootloader_format.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_common
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_common
 
 build esp-idf/esp_common/all: phony esp-idf/esp_common/libesp_common.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support
 
 build esp-idf/esp_hw_support/all: phony esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_hw_support/port/esp32/all esp-idf/esp_hw_support/lowpower/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support/lowpower
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support/lowpower
 
 build esp-idf/esp_hw_support/lowpower/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support/port/esp32
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_hw_support/port/esp32
 
 build esp-idf/esp_hw_support/port/esp32/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_rom
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_rom
 
 build esp-idf/esp_rom/all: phony esp-idf/esp_rom/libesp_rom.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_security
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_security
 
 build esp-idf/esp_security/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esp_system
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esp_system
 
 build esp-idf/esp_system/all: phony esp-idf/esp_system/libesp_system.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/esptool_py
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/esptool_py
 
 build esp-idf/esptool_py/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/freertos
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/freertos
 
 build esp-idf/freertos/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/hal
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/hal
 
 build esp-idf/hal/all: phony esp-idf/hal/libhal.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/log
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/log
 
 build esp-idf/log/all: phony esp-idf/log/liblog.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/main
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/main
 
 build esp-idf/main/all: phony esp-idf/main/libmain.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/micro-ecc
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/micro-ecc
 
 build esp-idf/micro-ecc/all: phony esp-idf/micro-ecc/libmicro-ecc.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/newlib
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/newlib
 
 build esp-idf/newlib/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/partition_table
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/partition_table
 
 build esp-idf/partition_table/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/soc
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/soc
 
 build esp-idf/soc/all: phony esp-idf/soc/libsoc.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/spi_flash
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/spi_flash
 
 build esp-idf/spi_flash/all: phony esp-idf/spi_flash/libspi_flash.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/bootloader/esp-idf/xtensa
+# Folder: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/xtensa
 
 build esp-idf/xtensa/all: phony esp-idf/xtensa/libxtensa.a
 
@@ -2645,14 +2645,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/hiram/.platformio/packages/framework-espidf/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/sources.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_app_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_bootloader_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/lowpower/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_security/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_system/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/espefuse.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/hal/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/log/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/soc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/spi_flash/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/build.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/component.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/depgraph.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/dfu.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/git_submodules.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/idf.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/kconfig.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/ldgen.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/prefix_map.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project_description.json.in C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/targets.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/third_party/GetGitRevisionDescription.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/tool_version_check.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/toolchain-esp32.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/version.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/confgen.py C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/config.env.in C$:/Users/hiram/.platformio/packages/framework-espidf/version.txt C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystem.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-ASM.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/ExternalProject.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindGit.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageMessage.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Platform/Generic.cmake C$:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev CMakeCache.txt CMakeFiles/3.16.4/CMakeASMCompiler.cmake CMakeFiles/3.16.4/CMakeCCompiler.cmake CMakeFiles/3.16.4/CMakeCXXCompiler.cmake CMakeFiles/3.16.4/CMakeSystem.cmake config/sdkconfig.cmake config/sdkconfig.h
+build build.ninja: RERUN_CMAKE | C$:/Users/hiram/.platformio/packages/framework-espidf/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/sources.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_app_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_bootloader_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/lowpower/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_security/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_system/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/espefuse.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/hal/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/log/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/soc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/spi_flash/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/build.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/component.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/depgraph.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/dfu.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/git_submodules.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/idf.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/kconfig.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/ldgen.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/prefix_map.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project_description.json.in C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/targets.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/third_party/GetGitRevisionDescription.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/tool_version_check.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/toolchain-esp32.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/version.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/confgen.py C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/config.env.in C$:/Users/hiram/.platformio/packages/framework-espidf/version.txt C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystem.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-ASM.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/ExternalProject.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindGit.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageMessage.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Platform/Generic.cmake C$:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev CMakeCache.txt CMakeFiles/3.16.4/CMakeASMCompiler.cmake CMakeFiles/3.16.4/CMakeCCompiler.cmake CMakeFiles/3.16.4/CMakeCXXCompiler.cmake CMakeFiles/3.16.4/CMakeSystem.cmake config/sdkconfig.cmake config/sdkconfig.h
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/hiram/.platformio/packages/framework-espidf/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/sources.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_app_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_bootloader_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/lowpower/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_security/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_system/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/espefuse.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/hal/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/log/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/soc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/spi_flash/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/build.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/component.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/depgraph.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/dfu.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/git_submodules.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/idf.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/kconfig.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/ldgen.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/prefix_map.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project_description.json.in C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/targets.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/third_party/GetGitRevisionDescription.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/tool_version_check.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/toolchain-esp32.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/version.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/confgen.py C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/config.env.in C$:/Users/hiram/.platformio/packages/framework-espidf/version.txt C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystem.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-ASM.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/ExternalProject.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindGit.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageMessage.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Platform/Generic.cmake C$:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/sdkconfig.esp32dev CMakeCache.txt CMakeFiles/3.16.4/CMakeASMCompiler.cmake CMakeFiles/3.16.4/CMakeCCompiler.cmake CMakeFiles/3.16.4/CMakeCXXCompiler.cmake CMakeFiles/3.16.4/CMakeSystem.cmake config/sdkconfig.cmake config/sdkconfig.h: phony
+build C$:/Users/hiram/.platformio/packages/framework-espidf/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject/main/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/efuse/esp32/sources.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_app_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_bootloader_format/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_common/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/lowpower/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_rom/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_security/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esp_system/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/espefuse.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/esptool_py/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/freertos/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/hal/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/log/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/newlib/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/partition_table/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/components/soc/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/spi_flash/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/CMakeLists.txt C$:/Users/hiram/.platformio/packages/framework-espidf/components/xtensa/project_include.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/build.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/component.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/depgraph.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/dfu.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/git_submodules.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/idf.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/kconfig.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/ldgen.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/prefix_map.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/project_description.json.in C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/targets.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/third_party/GetGitRevisionDescription.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/tool_version_check.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/toolchain-esp32.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/cmake/version.cmake C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/confgen.py C$:/Users/hiram/.platformio/packages/framework-espidf/tools/kconfig_new/config.env.in C$:/Users/hiram/.platformio/packages/framework-espidf/version.txt C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeASMInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystem.cmake.in C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestASMCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CheckCXXSourceCompiles.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-ASM.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-C.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/GNU.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/ExternalProject.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindGit.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/FindPackageMessage.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake C$:/Users/hiram/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/Platform/Generic.cmake C$:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/sdkconfig.esp32dev CMakeCache.txt CMakeFiles/3.16.4/CMakeASMCompiler.cmake CMakeFiles/3.16.4/CMakeCCompiler.cmake CMakeFiles/3.16.4/CMakeCXXCompiler.cmake CMakeFiles/3.16.4/CMakeSystem.cmake config/sdkconfig.cmake config/sdkconfig.h: phony
 
 
 #############################################

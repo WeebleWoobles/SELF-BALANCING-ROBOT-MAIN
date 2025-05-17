@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/src
+# Install script for directory: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

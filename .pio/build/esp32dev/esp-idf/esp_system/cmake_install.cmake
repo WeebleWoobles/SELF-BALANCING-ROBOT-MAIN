@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hiram/OneDrive/Documents/PlatformIO/Projects/Gyro_Bot/.pio/build/esp32dev/esp-idf/esp_system/port/cmake_install.cmake")
+  include("C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/esp_system/port/cmake_install.cmake")
 endif()
 

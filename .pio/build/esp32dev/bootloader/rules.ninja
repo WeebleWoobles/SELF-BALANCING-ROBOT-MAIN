@@ -318,7 +318,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\OneDrive\Documents\PlatformIO\Projects\Gyro_Bot\.pio\build\esp32dev\bootloader
+  command = C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\.platformio\packages\framework-espidf\components\bootloader\subproject -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\bootloader
   description = Re-running CMake...
   generator = 1
 
