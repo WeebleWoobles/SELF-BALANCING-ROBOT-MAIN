@@ -1,0 +1,128 @@
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/i2c.h"
+#include "math.h"
+
+// I2C Configuration
+#define I2C_MASTER_SCL_IO 22        // SCL GPIO (will need to be adjusted)
+#define I2C_MASTER_SDA_IO 21        // SDA GPIO (will also need to be adjusted)
+#define I2C_MASTER_NUM I2C_NUM_0    // I2C port number
+#define I2C_MASTER_FREQ_HZ 100000   // I2C frequency
+
+// We will need to change these values based on our measurements
+// IMU Configuration 
+#define IMU_ADDR 0x68               // IMU I2C address
+#define ACCEL_X_H 0x3B              // accelerometer X high byte
+#define ACCEL_X_L 0x3C              // accelerometer X low byte
+#define ACCEL_Y_H 0x3D              // accelerometer Y high byte
+#define ACCEL_Y_L 0x3E              // accelerometer Y low byte
+#define ACCEL_Z_H 0x3F              // accelerometer Z high byte
+#define ACCEL_Z_L 0x40              // accelerometer Z low byte
+#define GYRO_X_H 0x43               // gyroscope X high byte
+#define GYRO_X_L 0x44               // gyroscope X low byte
+
+// PID Constants (these we need to change once we take the readings)
+float Kp = 1.0;                     // proportional gain
+float Ki = 0.0;                     // integral gain
+float Kd = 0.0;                     // derivative gain
+
+// Global Variables
+float pitch = 0.0;                  // our pitch angle in degrees
+float gyro_x_rate = 0.0;            // our gyroscope rate degrees/seconds
+float accel_pitch = 0.0;            // Accelerometer pitch in degrees
+float prev_pitch = 0.0;             // Our Previous pitch for filtering
+float integral = 0.0;               // Integral term for our PID controller
+float prev_error = 0.0;             // Derivative previous error
+float dt = 0.01;                    // Loop time (10ms for 100Hz)
+float alpha = 0.98;                 // Complementary filter constant
+
+// the I2C master setup
+void i2c_master_init() {
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = I2C_MASTER_FREQ_HZ
+    };
+    i2c_param_config(I2C_MASTER_NUM, &conf);
+    i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+}
+
+// reads byte from the IMU registers (we can ignore this)
+uint8_t read_register(uint8_t reg) {
+    uint8_t data;
+    i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+    i2c_master_start(cmd);
+    i2c_master_write_byte(cmd, (IMU_ADDR << 1) | I2C_MASTER_WRITE, true);
+    i2c_master_write_byte(cmd, reg, true);
+    i2c_master_start(cmd);
+    i2c_master_write_byte(cmd, (IMU_ADDR << 1) | I2C_MASTER_READ, true);
+    i2c_master_read_byte(cmd, &data, I2C_MASTER_NACK);
+    i2c_master_stop(cmd);
+    i2c_master_cmd_begin(I2C_MASTER_NUM, cmd, 1000 / portTICK_PERIOD_MS);
+    i2c_cmd_link_delete(cmd);
+    return data;
+}
+
+// reads from 2 registers (we can ignore)
+int16_t read_16bit_register(uint8_t reg_h, uint8_t reg_l) {
+    uint8_t h = read_register(reg_h);
+    uint8_t l = read_register(reg_l);
+    return (int16_t)((h << 8) | l);
+}
+
+// this will read IMU data and calculate angles from readings
+void read_imu() {
+    // reads the accelerometer data
+    int16_t accel_x = read_16bit_register(ACCEL_X_H, ACCEL_X_L);
+    int16_t accel_y = read_16bit_register(ACCEL_Y_H, ACCEL_Y_L);
+    int16_t accel_z = read_16bit_register(ACCEL_Z_H, ACCEL_Z_L);
+    
+    // reads teh gyroscope data
+    int16_t gyro_x = read_16bit_register(GYRO_X_H, GYRO_X_L);
+
+    // this calculates the pitch from the accelerometer in degrees
+    accel_pitch = atan2(accel_y, accel_z) * 180.0 / M_PI;
+
+    // this calculates gyro rate that we need to adjust based on IMU sensitivity
+    gyro_x_rate = gyro_x / 131.0; // 131 is an example; we need to fill it in with our IMU's sensitivity value
+}
+
+// this will calculate the pitch using complementary filter from our IMU
+void calculate_pitch() {
+    read_imu();
+    pitch = alpha * (pitch + gyro_x_rate * dt) + (1 - alpha) * accel_pitch;
+}
+
+// PID controller
+float pid_control(float setpoint, float measured) {
+    float error = setpoint - measured;
+    integral += error * dt;
+    
+    //we also should add integral windup limits here 
+    //for if the robot is not able to correct itslef further
+    float derivative = (error - prev_error) / dt;
+    float output = Kp * error + Ki * integral + Kd * derivative;
+    prev_error = error;
+    return output;
+}
+
+void app_main() {
+    i2c_master_init();
+
+    // This is where we add our IMU initialization
+    
+
+    while (1) {
+        calculate_pitch();
+        float output = pid_control(0.0, pitch); // Setpoint is 0 position which i think means uprite
+
+        // Output controls motors like PWM
+        
+
+        vTaskDelay(pdMS_TO_TICKS(10)); // 10ms delay for 100Hz
+    }
+}
