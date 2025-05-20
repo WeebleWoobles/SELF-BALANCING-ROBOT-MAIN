@@ -50,3 +50,30 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+*.json
+*.log
+*.zip
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.xz
+*.7z
+# Backup files
+*~
+*.bak
+*.swp 
+*.swo
+# IDE specific files
+*.vscode/
+*.idea/
+# CMake specific files
+CMakeFiles/
+CMakeCache.txt
+CMakeOutput.log 
+CMakeError.log
+# Qt specific files
+*.moc
+*.ui
+*.qrc
