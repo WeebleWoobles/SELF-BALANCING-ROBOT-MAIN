@@ -1,4 +1,6 @@
 # SELF Balancing Robot
+esp-wroom-32
+
 
 ## Design
 
