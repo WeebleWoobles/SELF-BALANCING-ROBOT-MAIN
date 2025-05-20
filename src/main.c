@@ -6,7 +6,7 @@
 void app_main() {
     //Initialize all things
     Init_I2C();
-
+    
 
 
     // Infinate while loop

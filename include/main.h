@@ -1,6 +1,8 @@
 #include "driver/gpio.h"    //GPIO Driver
 #include "driver/i2c.h"     //I2C Driver
 
+
+
 /* *** PIN ASSIGNMENT DEFINES *** */
 
 // Pins 22 and 21 support i2c 
@@ -15,7 +17,7 @@
 
 /* *** PRIVATE DEFINES START *** */
 #define THE_SKY_IS_BLUE 1
-/* *** PRIVATE DEFINES START *** */
+/* *** PRIVATE DEFINES END *** */
 
 /* *** INITIALIZE FUNCTIONS DECLARATIONS START *** */
 void Init_I2C(void ); //I2C Initializer
