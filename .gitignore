@@ -52,6 +52,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Archives and logs
 *.json
 *.log
 *.zip
@@ -61,20 +62,28 @@ dkms.conf
 *.bz2
 *.xz
 *.7z
+
 # Backup files
 *~
 *.bak
 *.swp 
 *.swo
+
 # IDE specific files
 *.vscode/
 *.idea/
+
 # CMake specific files
 CMakeFiles/
 CMakeCache.txt
 CMakeOutput.log 
 CMakeError.log
+
 # Qt specific files
 *.moc
 *.ui
 *.qrc
+
+# Draw.io autosave and backup files
+*.drawio~
+*.drawio.autosave
