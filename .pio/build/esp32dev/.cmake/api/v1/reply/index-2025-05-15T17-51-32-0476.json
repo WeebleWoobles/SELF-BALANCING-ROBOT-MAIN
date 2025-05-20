@@ -25,7 +25,11 @@
 	"objects" : 
 	[
 		{
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/index-2025-05-15T17-51-32-0476.json
 			"jsonFile" : "codemodel-v2-a8460ef30e820a3d3608.json",
+========
+			"jsonFile" : "codemodel-v2-57feeb0f09b73bbed259.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/index-2025-05-15T09-53-38-0584.json
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -38,7 +42,11 @@
 	{
 		"codemodel-v2" : 
 		{
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/index-2025-05-15T17-51-32-0476.json
 			"jsonFile" : "codemodel-v2-a8460ef30e820a3d3608.json",
+========
+			"jsonFile" : "codemodel-v2-57feeb0f09b73bbed259.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/index-2025-05-15T09-53-38-0584.json
 			"kind" : "codemodel",
 			"version" : 
 			{

@@ -34,7 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+<<<<<<< HEAD
   include("C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/cmake_install.cmake")
+=======
+  include("C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/cmake_install.cmake")
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -743,7 +743,11 @@
 				},
 				{
 					"backtrace" : 10,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+========
+					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 				},
 				{
 					"backtrace" : 10,
@@ -1400,6 +1404,17 @@
 			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
 		},
 		{
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
+========
+			"backtrace" : 65,
+			"id" : "__idf_unity::@fec746937506b5690992"
+		},
+		{
+			"backtrace" : 66,
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 			"backtrace" : 67,
 			"id" : "__idf_console::@4311ed8d271cc0ee1422"
 		},
@@ -1408,8 +1423,8 @@
 			"id" : "__idf_esp_driver_cam::@d005630ea6316acc7c7d"
 		},
 		{
-			"backtrace" : 72,
-			"id" : "__idf_esp_eth::@68140d310044213ed0bc"
+			"backtrace" : 80,
+			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
 		},
 		{
 			"backtrace" : 65,
@@ -1454,6 +1469,7 @@
 		{
 			"backtrace" : 86,
 			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
 		},
 		{
 			"backtrace" : 87,
@@ -1462,10 +1478,40 @@
 		{
 			"backtrace" : 88,
 			"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56"
+========
+		},
+		{
+			"backtrace" : 74,
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
+		},
+		{
+			"backtrace" : 72,
+			"id" : "__idf_esp_eth::@68140d310044213ed0bc"
+		},
+		{
+			"backtrace" : 79,
+			"id" : "__idf_esp_https_server::@a47490a9e49b7eabdb18"
+		},
+		{
+			"backtrace" : 93,
+			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
+		},
+		{
+			"backtrace" : 94,
+			"id" : "__idf_src::@2478b13de56d3028f688"
+		},
+		{
+			"backtrace" : 87,
+			"id" : "__idf_json::@c78a8bdc820334f01148"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 		},
 		{
 			"backtrace" : 89,
 			"id" : "__idf_nvs_sec_provider::@06580cba064af97f59fd"
+		},
+		{
+			"backtrace" : 88,
+			"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56"
 		},
 		{
 			"backtrace" : 90,
@@ -1478,6 +1524,7 @@
 		{
 			"backtrace" : 92,
 			"id" : "__idf_spiffs::@df881b71474064c86689"
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
 		},
 		{
 			"backtrace" : 93,
@@ -1486,6 +1533,8 @@
 		{
 			"backtrace" : 94,
 			"id" : "__idf_src::@2478b13de56d3028f688"
+========
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 		}
 	],
 	"id" : "Gyro_Bot.elf::@6890427a1f51a3e7e1df",
@@ -1513,7 +1562,11 @@
 			},
 			{
 				"backtrace" : 5,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
 				"fragment" : "-Wl,--Map=C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/Gyro_Bot.map",
+========
+				"fragment" : "-Wl,--Map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/Gyro_Bot.map",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 				"role" : "flags"
 			},
 			{
@@ -1648,7 +1701,11 @@
 			},
 			{
 				"backtrace" : 10,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-522add8fd0d9e3c7e9f8.json
 				"fragment" : "-LC:\\Users\\arien\\OneDrive\\Documents\\GitHub\\ecen361\\Self-Balancing_Robot\\SELF-BALANCING-ROBOT-MAIN\\.pio\\build\\esp32dev\\esp-idf\\esp_system\\ld",
+========
+				"fragment" : "-LC:\\Users\\hiram\\Git\\SELF-BALANCING-ROBOT-MAIN\\.pio\\build\\esp32dev\\esp-idf\\esp_system\\ld",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-Gyro_Bot.elf-02cbaa86deeeb89d116a.json
 				"role" : "libraryPath"
 			},
 			{

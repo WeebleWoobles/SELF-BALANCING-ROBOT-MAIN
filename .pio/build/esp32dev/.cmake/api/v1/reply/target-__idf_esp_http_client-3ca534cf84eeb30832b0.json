@@ -216,7 +216,11 @@
 				},
 				{
 					"backtrace" : 3,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_http_client-3ca534cf84eeb30832b0.json
 					"fragment" : "-fmacro-prefix-map=C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN=."
+========
+					"fragment" : "-fmacro-prefix-map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN=."
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_http_client-f11dab334e5dea5b6eb1.json
 				},
 				{
 					"backtrace" : 3,
@@ -286,7 +290,11 @@
 			[
 				{
 					"backtrace" : 10,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_http_client-3ca534cf84eeb30832b0.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+========
+					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_http_client-f11dab334e5dea5b6eb1.json
 				},
 				{
 					"backtrace" : 12,

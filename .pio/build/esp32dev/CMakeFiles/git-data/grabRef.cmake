@@ -15,10 +15,17 @@
 
 set(HEAD_HASH)
 
+<<<<<<< HEAD
 file(READ "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
 set(GIT_DIR "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.git")
+=======
+file(READ "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
+
+string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
+set(GIT_DIR "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.git")
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)
@@ -34,17 +41,31 @@ if(HEAD_CONTENTS MATCHES "ref")
 	# named branch
 	string(REPLACE "ref: " "" HEAD_REF "${HEAD_CONTENTS}")
 	if(EXISTS "${GIT_DIR}/${HEAD_REF}")
+<<<<<<< HEAD
 		configure_file("${GIT_DIR}/${HEAD_REF}" "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
 	elseif(EXISTS "${GIT_DIR}/logs/${HEAD_REF}")
 		configure_file("${GIT_DIR}/logs/${HEAD_REF}" "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
+=======
+		configure_file("${GIT_DIR}/${HEAD_REF}" "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
+	elseif(EXISTS "${GIT_DIR}/logs/${HEAD_REF}")
+		configure_file("${GIT_DIR}/logs/${HEAD_REF}" "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
 		set(HEAD_HASH "${HEAD_REF}")
 	endif()
 else()
 	# detached HEAD
+<<<<<<< HEAD
 	configure_file("${GIT_DIR}/HEAD" "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
 endif()
 
 if(NOT HEAD_HASH)
 	file(READ "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
+=======
+	configure_file("${GIT_DIR}/HEAD" "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" COPYONLY)
+endif()
+
+if(NOT HEAD_HASH)
+	file(READ "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
 	string(STRIP "${HEAD_HASH}" HEAD_HASH)
 endif()

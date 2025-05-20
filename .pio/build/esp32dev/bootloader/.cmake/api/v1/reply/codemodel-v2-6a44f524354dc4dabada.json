@@ -466,140 +466,220 @@
 				{
 					"directoryIndex" : 10,
 					"id" : "__idf_bootloader_support::@d88583f91142925c6676",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_bootloader_support-78a2acb2454025ea029e.json",
+========
+					"jsonFile" : "target-__idf_bootloader_support-61fa7ac718500bbf5d82.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_bootloader_support",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "__idf_efuse::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_efuse-e246f5a0b9e368b9ebd6.json",
+========
+					"jsonFile" : "target-__idf_efuse-70bef4e307e87f5577e5.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_efuse",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 8,
 					"id" : "__idf_esp_bootloader_format::@d2aa1b1547bed85670ee",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_esp_bootloader_format-7c8eb8ad7d9954850c0e.json",
+========
+					"jsonFile" : "target-__idf_esp_bootloader_format-7eaa69a3ad13201a12fb.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_esp_bootloader_format",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 17,
 					"id" : "__idf_esp_common::@5ba0aac035ae9b4e20a4",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_esp_common-86d8dd56cf330ac7a5f0.json",
+========
+					"jsonFile" : "target-__idf_esp_common-1a8ffd29685be133293f.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_esp_common",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 14,
 					"id" : "__idf_esp_hw_support::@ce4791f5a7554c569ddb",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_esp_hw_support-db052a1fd35e17ddb9f1.json",
+========
+					"jsonFile" : "target-__idf_esp_hw_support-9de855a0ddd353ebad9a.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_esp_hw_support",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 18,
 					"id" : "__idf_esp_rom::@c269e361cd87ad81e927",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_esp_rom-8398b41cc9dfeaa8d1b8.json",
+========
+					"jsonFile" : "target-__idf_esp_rom-3d5177888fb7a30f5519.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_esp_rom",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 13,
 					"id" : "__idf_esp_system::@874df54e61e20112dfd4",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_esp_system-2588a3ec50554dd4f49b.json",
+========
+					"jsonFile" : "target-__idf_esp_system-bd1f7319b9c3731fa9f8.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_esp_system",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "__idf_hal::@41c1a00f56cd1e9ede18",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_hal-48eba33ca8b38c2d5a63.json",
+========
+					"jsonFile" : "target-__idf_hal-04991486eb4a9ccdb365.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_hal",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 19,
 					"id" : "__idf_log::@d5e1aa0ef4e3c98c8a70",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_log-c63680ea66dd5d729f30.json",
+========
+					"jsonFile" : "target-__idf_log-a9ad373b76b087c8f457.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_log",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 24,
 					"id" : "__idf_main::@7368607ed66887415643",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_main-4ee034efb1cc4901974e.json",
+========
+					"jsonFile" : "target-__idf_main-f42aa48afd1344b4efa1.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_main",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "__idf_micro-ecc::@37158dc68a69c79f835a",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_micro-ecc-d5c32d2f7d9deea42a72.json",
+========
+					"jsonFile" : "target-__idf_micro-ecc-dc8cf3e6ead96769adc2.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_micro-ecc",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "__idf_soc::@824f1541829f13857909",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_soc-395cbe6cde584594ffb0.json",
+========
+					"jsonFile" : "target-__idf_soc-5eca46852804d64e823a.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_soc",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 7,
 					"id" : "__idf_spi_flash::@6f8a8c72478269b2cd60",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_spi_flash-3088b801a6cdbe2b872c.json",
+========
+					"jsonFile" : "target-__idf_spi_flash-c9f6e086cb94c7745bea.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_spi_flash",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "__idf_xtensa::@1daaaad7abe597e030f9",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-__idf_xtensa-65e6852c5e39895692ef.json",
+========
+					"jsonFile" : "target-__idf_xtensa-5af05f79baa42669923f.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "__idf_xtensa",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "_project_elf_src::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-_project_elf_src-64558d34fe04999dd508.json",
+========
+					"jsonFile" : "target-_project_elf_src-29e081cacfc6bf926407.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "_project_elf_src",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-app-fc6b6c7b796bb381d6fc.json",
+========
+					"jsonFile" : "target-app-4a7b1a790b6067b150c8.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "app",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "bootloader.elf::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-bootloader.elf-9ea9f1ab4121778b2721.json",
+========
+					"jsonFile" : "target-bootloader.elf-67dfad4e9f23a9b44b49.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "bootloader.elf",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 20,
 					"id" : "bootloader_check_size::@bf8f55be585a12323665",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-bootloader_check_size-3027cfe002267e3a48b1.json",
+========
+					"jsonFile" : "target-bootloader_check_size-fbbaa97a4a8dbe1c3301.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "bootloader_check_size",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "confserver::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-confserver-8e3de6c7df1181aba812.json",
+========
+					"jsonFile" : "target-confserver-ef2e17e5664f12a96974.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "confserver",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "efuse-common-table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-efuse-common-table-a5a0e7eb721ddcf41bea.json",
+========
+					"jsonFile" : "target-efuse-common-table-54769cc6264126893c1f.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "efuse-common-table",
 					"projectIndex" : 1
 				},
@@ -613,112 +693,176 @@
 				{
 					"directoryIndex" : 11,
 					"id" : "efuse_common_table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-efuse_common_table-1410ea6724982a4f6217.json",
+========
+					"jsonFile" : "target-efuse_common_table-dbd323e9ab4ef9a62191.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "efuse_common_table",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "efuse_custom_table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-efuse_custom_table-b709cbb28ca536d6882f.json",
+========
+					"jsonFile" : "target-efuse_custom_table-2991b1b006cb17dab781.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "efuse_custom_table",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "efuse_test_table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-efuse_test_table-6e690a4fabdbe50b495b.json",
+========
+					"jsonFile" : "target-efuse_test_table-dc6105463d9e0597a1f4.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "efuse_test_table",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "erase_flash::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-erase_flash-6a39d7f8bb335fe623d1.json",
+========
+					"jsonFile" : "target-erase_flash-b26ff9c757427fb52b68.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "erase_flash",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gen_project_binary::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-gen_project_binary-d59b101835a416bd96e2.json",
+========
+					"jsonFile" : "target-gen_project_binary-c66de0f82d98fe851c52.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "gen_project_binary",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "menuconfig::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-menuconfig-2370e95e4cbf06e2e034.json",
+========
+					"jsonFile" : "target-menuconfig-5b4054102d62f11190a8.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "menuconfig",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "merge-bin::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-merge-bin-b5bb1f4dca613f897212.json",
+========
+					"jsonFile" : "target-merge-bin-56f1804ea6773d964c5f.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "merge-bin",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "monitor::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-monitor-8f3c1f8e71101b0a6394.json",
+========
+					"jsonFile" : "target-monitor-9ee8724f0659166cf854.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "monitor",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "save-defconfig::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-save-defconfig-620c4c04ddf8b86fe974.json",
+========
+					"jsonFile" : "target-save-defconfig-ce61e1f0ff0b63a80bd8.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "save-defconfig",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "show-efuse-table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-show-efuse-table-0d456502aeb1a2935e7c.json",
+========
+					"jsonFile" : "target-show-efuse-table-e9a01fe6bf9153125fd1.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "show-efuse-table",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "show_efuse_table::@2da764c922f8b73e9c75",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-show_efuse_table-00df99b89e910ee74e05.json",
+========
+					"jsonFile" : "target-show_efuse_table-11d18de488b07b787ef8.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "show_efuse_table",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "size::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-size-18f92c140f0c5f19efd3.json",
+========
+					"jsonFile" : "target-size-901f1ee365e0aa91bb57.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "size",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "size-components::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-size-components-359fa98886997e8f932f.json",
+========
+					"jsonFile" : "target-size-components-e9d46af37b2f930a31ca.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "size-components",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "size-files::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-size-files-cef47d0267870a5e63f5.json",
+========
+					"jsonFile" : "target-size-files-be1ceee136560f07f9a0.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "size-files",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "uf2::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-uf2-6835543931ce2a0012b3.json",
+========
+					"jsonFile" : "target-uf2-e7efd4ba45af0ea459f6.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "uf2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "uf2-app::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 					"jsonFile" : "target-uf2-app-ea16cbd8634f74d9b69c.json",
+========
+					"jsonFile" : "target-uf2-app-ed4b4ab0478969823dff.json",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 					"name" : "uf2-app",
 					"projectIndex" : 0
 				}
@@ -728,8 +872,13 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
+<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-6a44f524354dc4dabada.json
 		"build" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader",
 		"source" : "C:/Users/arien/.platformio/packages/framework-espidf/components/bootloader/subproject"
+========
+		"build" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader",
+		"source" : "C:/Users/hiram/.platformio/packages/framework-espidf/components/bootloader/subproject"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/codemodel-v2-fb59a42f2ccb13917080.json
 	},
 	"version" : 
 	{

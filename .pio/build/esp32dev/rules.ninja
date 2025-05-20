@@ -1848,7 +1848,11 @@ rule C_STATIC_LIBRARY_LINKER____idf_src
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
+<<<<<<< HEAD
   command = C:\Users\arien\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\arien\OneDrive\Documents\GitHub\ecen361\Self-Balancing_Robot\SELF-BALANCING-ROBOT-MAIN -BC:\Users\arien\OneDrive\Documents\GitHub\ecen361\Self-Balancing_Robot\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev
+=======
+  command = C:\Users\hiram\.platformio\packages\tool-cmake\bin\cmake.exe -SC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN -BC:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
   description = Re-running CMake...
   generator = 1
 

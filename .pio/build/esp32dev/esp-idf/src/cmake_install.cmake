@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/src
+=======
+# Install script for directory: C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/src
+>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

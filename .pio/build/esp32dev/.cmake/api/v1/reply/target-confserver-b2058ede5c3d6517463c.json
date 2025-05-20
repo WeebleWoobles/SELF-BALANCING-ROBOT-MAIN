@@ -76,13 +76,21 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-confserver-b2058ede5c3d6517463c.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/confserver",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/confserver",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-confserver-ef2e17e5664f12a96974.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-confserver-b2058ede5c3d6517463c.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/confserver.rule",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/confserver.rule",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-confserver-ef2e17e5664f12a96974.json
 			"sourceGroupIndex" : 1
 		}
 	],

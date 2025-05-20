@@ -194,7 +194,11 @@
 				},
 				{
 					"backtrace" : 5,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-b2816192634a997ed32e.json
 					"fragment" : "-fmacro-prefix-map=C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN=."
+========
+					"fragment" : "-fmacro-prefix-map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN=."
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-81ba9e28dc50ad7e8cc5.json
 				},
 				{
 					"backtrace" : 5,
@@ -264,7 +268,11 @@
 			[
 				{
 					"backtrace" : 9,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-b2816192634a997ed32e.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+========
+					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-81ba9e28dc50ad7e8cc5.json
 				},
 				{
 					"backtrace" : 10,
@@ -284,7 +292,11 @@
 				},
 				{
 					"backtrace" : 11,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-b2816192634a997ed32e.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/mbedtls/mbedtls/library"
+========
+					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/mbedtls/mbedtls/library"
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-mbedcrypto-81ba9e28dc50ad7e8cc5.json
 				},
 				{
 					"backtrace" : 12,

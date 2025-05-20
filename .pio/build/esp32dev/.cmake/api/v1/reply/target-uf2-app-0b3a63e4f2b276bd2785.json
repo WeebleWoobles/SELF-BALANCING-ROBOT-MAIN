@@ -60,13 +60,21 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-uf2-app-0b3a63e4f2b276bd2785.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/uf2-app",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/uf2-app",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-uf2-app-ed4b4ab0478969823dff.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-uf2-app-0b3a63e4f2b276bd2785.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/uf2-app.rule",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/uf2-app.rule",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-uf2-app-ed4b4ab0478969823dff.json
 			"sourceGroupIndex" : 1
 		}
 	],

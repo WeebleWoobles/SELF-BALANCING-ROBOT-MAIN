@@ -76,13 +76,21 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-save-defconfig-0da6de8874c26c29357f.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/save-defconfig",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/save-defconfig",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-save-defconfig-ce61e1f0ff0b63a80bd8.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-save-defconfig-0da6de8874c26c29357f.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/save-defconfig.rule",
+========
+			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/save-defconfig.rule",
+>>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-save-defconfig-ce61e1f0ff0b63a80bd8.json
 			"sourceGroupIndex" : 1
 		}
 	],
