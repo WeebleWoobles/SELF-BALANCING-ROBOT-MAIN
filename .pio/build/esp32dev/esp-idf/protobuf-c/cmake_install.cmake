@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/arien/.platformio/packages/framework-espidf/components/protobuf-c
+# Install script for directory: C:/Users/hiram/.platformio/packages/framework-espidf/components/protobuf-c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/arien/.platformio/packages/framework-espidf/components/mbedtls
+# Install script for directory: C:/Users/hiram/.platformio/packages/framework-espidf/components/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 

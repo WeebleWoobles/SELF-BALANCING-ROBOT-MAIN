@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/arien/.platformio/packages/framework-espidf/components/esp_phy
+# Install script for directory: C:/Users/hiram/.platformio/packages/framework-espidf/components/esp_phy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
