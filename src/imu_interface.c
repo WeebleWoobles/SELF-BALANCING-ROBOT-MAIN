@@ -1,41 +1,7 @@
-#pragma once
-
-#include <stdint.h>
-#include <stdbool.h>
+#include "imu_interface.h"
 
 
-// Sensor Interface Module (IMU Data Acquisition)
-//
-// This module will be responsible for interfacing with the IMU sensor
-// and acquiring the necessary data for the robot's balancing algorithm.
-// It will handle the I2C communication and data processing.
-// The module will include functions for initializing the sensor, reading
-// data, and converting raw data into usable formats.
-//
-//  HAL/Scheduler
-
-
-
-// IMU I2C address (example for MPU6050, change as needed)
-#define IMU_I2C_ADDRESS      0x68
-
-// IMU Register Addresses (example for MPU6050)
-#define IMU_REG_PWR_MGMT_1   0x6B
-#define IMU_REG_ACCEL_XOUT_H 0x3B
-#define IMU_REG_GYRO_XOUT_H  0x43
-
-// IMU Data Structure
-typedef struct {
-    float accel_x;
-    float accel_y;
-    float accel_z;
-    float gyro_x;
-    float gyro_y;
-    float gyro_z;
-    float temperature;
-} IMU_Data_t;
-
-// Function Declarations
+// Function Implementations
 
 /**
  * @brief Initialize the IMU sensor and I2C interface.
