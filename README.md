@@ -9,7 +9,7 @@ IMU (Inertial Measurment Unit): GY-521
 
 ### Pin Out
 
-![Google Sheet Pin Out Diagram](https://docs.google.com/spreadsheets/d/1lCuJJPs_-ZYu7kVZD1LAmiCTTDlawlaXdf8EDxlrphQ/edit?usp=sharing)
+[Google Sheet Pin Out Diagram](https://docs.google.com/spreadsheets/d/1lCuJJPs_-ZYu7kVZD1LAmiCTTDlawlaXdf8EDxlrphQ/edit?usp=sharing)
 
 
 ### Software Diagram
