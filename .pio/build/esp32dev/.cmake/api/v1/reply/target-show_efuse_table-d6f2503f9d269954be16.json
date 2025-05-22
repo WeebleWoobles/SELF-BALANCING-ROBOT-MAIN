@@ -74,21 +74,13 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-show_efuse_table-d6f2503f9d269954be16.json
 			"path" : ".pio/build/esp32dev/esp-idf/efuse/CMakeFiles/show_efuse_table",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/efuse/CMakeFiles/show_efuse_table",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-show_efuse_table-11d18de488b07b787ef8.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-show_efuse_table-d6f2503f9d269954be16.json
 			"path" : ".pio/build/esp32dev/esp-idf/efuse/CMakeFiles/show_efuse_table.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/esp-idf/efuse/CMakeFiles/show_efuse_table.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-show_efuse_table-11d18de488b07b787ef8.json
 			"sourceGroupIndex" : 1
 		}
 	],

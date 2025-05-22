@@ -183,11 +183,7 @@
 				},
 				{
 					"backtrace" : 3,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-0f3623601eb7f0617532.json
 					"fragment" : "-fmacro-prefix-map=C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN=."
-========
-					"fragment" : "-fmacro-prefix-map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN=."
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-f84e3309c793a720def5.json
 				},
 				{
 					"backtrace" : 3,
@@ -253,11 +249,7 @@
 			[
 				{
 					"backtrace" : 5,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-0f3623601eb7f0617532.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
-========
-					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-f84e3309c793a720def5.json
 				},
 				{
 					"backtrace" : 7,
@@ -541,11 +533,7 @@
 				},
 				{
 					"backtrace" : 3,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-0f3623601eb7f0617532.json
 					"fragment" : "-fmacro-prefix-map=C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN=."
-========
-					"fragment" : "-fmacro-prefix-map=C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN=."
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-f84e3309c793a720def5.json
 				},
 				{
 					"backtrace" : 3,
@@ -603,11 +591,7 @@
 			[
 				{
 					"backtrace" : 5,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-0f3623601eb7f0617532.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
-========
-					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/config"
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/.cmake/api/v1/reply/target-__idf_esp_gdbstub-f84e3309c793a720def5.json
 				},
 				{
 					"backtrace" : 7,

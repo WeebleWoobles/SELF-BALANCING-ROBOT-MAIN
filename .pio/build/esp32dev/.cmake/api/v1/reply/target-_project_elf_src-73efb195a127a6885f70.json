@@ -61,31 +61,19 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-_project_elf_src-73efb195a127a6885f70.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/_project_elf_src",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/_project_elf_src",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-_project_elf_src-29e081cacfc6bf926407.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-_project_elf_src-73efb195a127a6885f70.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/_project_elf_src.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/_project_elf_src.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-_project_elf_src-29e081cacfc6bf926407.json
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-_project_elf_src-73efb195a127a6885f70.json
 			"path" : ".pio/build/esp32dev/project_elf_src_esp32.c.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/project_elf_src_esp32.c.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-_project_elf_src-29e081cacfc6bf926407.json
 			"sourceGroupIndex" : 1
 		}
 	],

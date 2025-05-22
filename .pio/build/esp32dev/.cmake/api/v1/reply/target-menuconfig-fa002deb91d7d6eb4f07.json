@@ -76,21 +76,13 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-menuconfig-fa002deb91d7d6eb4f07.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/menuconfig",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/menuconfig",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-menuconfig-5b4054102d62f11190a8.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-menuconfig-fa002deb91d7d6eb4f07.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/menuconfig.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/menuconfig.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-menuconfig-5b4054102d62f11190a8.json
 			"sourceGroupIndex" : 1
 		}
 	],

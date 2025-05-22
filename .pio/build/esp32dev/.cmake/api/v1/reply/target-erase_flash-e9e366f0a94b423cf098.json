@@ -87,21 +87,13 @@
 		{
 			"backtrace" : 6,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-erase_flash-e9e366f0a94b423cf098.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/erase_flash",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/erase_flash",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-erase_flash-b26ff9c757427fb52b68.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-erase_flash-e9e366f0a94b423cf098.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/erase_flash.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/erase_flash.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-erase_flash-b26ff9c757427fb52b68.json
 			"sourceGroupIndex" : 1
 		}
 	],

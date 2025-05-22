@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /* * Data converted from C:\Users\arien\OneDrive\Documents\GitHub\ecen361\Self-Balancing_Robot\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\x509_crt_bundle
-=======
-/* * Data converted from C:\Users\hiram\Git\SELF-BALANCING-ROBOT-MAIN\.pio\build\esp32dev\x509_crt_bundle
->>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

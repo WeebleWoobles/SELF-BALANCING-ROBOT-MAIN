@@ -60,21 +60,13 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-size-files-8a80fbd1ae16574410b4.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/size-files",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/size-files",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-size-files-be1ceee136560f07f9a0.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-size-files-8a80fbd1ae16574410b4.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/size-files.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/size-files.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-size-files-be1ceee136560f07f9a0.json
 			"sourceGroupIndex" : 1
 		}
 	],

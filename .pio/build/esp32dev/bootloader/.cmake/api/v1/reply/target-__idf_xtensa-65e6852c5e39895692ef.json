@@ -251,11 +251,7 @@
 			[
 				{
 					"backtrace" : 7,
-<<<<<<<< HEAD:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-__idf_xtensa-65e6852c5e39895692ef.json
 					"path" : "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config"
-========
-					"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/config"
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-__idf_xtensa-5af05f79baa42669923f.json
 				},
 				{
 					"backtrace" : 9,

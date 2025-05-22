@@ -60,21 +60,13 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-size-components-e11801786919fb901661.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/size-components",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/size-components",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-size-components-e9d46af37b2f930a31ca.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-size-components-e11801786919fb901661.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/size-components.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/size-components.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-size-components-e9d46af37b2f930a31ca.json
 			"sourceGroupIndex" : 1
 		}
 	],

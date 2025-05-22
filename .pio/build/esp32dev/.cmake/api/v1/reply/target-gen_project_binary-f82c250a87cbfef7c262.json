@@ -94,31 +94,19 @@
 		{
 			"backtrace" : 6,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-gen_project_binary-f82c250a87cbfef7c262.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/gen_project_binary",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/gen_project_binary",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-gen_project_binary-c66de0f82d98fe851c52.json
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-gen_project_binary-f82c250a87cbfef7c262.json
 			"path" : ".pio/build/esp32dev/CMakeFiles/gen_project_binary.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/CMakeFiles/gen_project_binary.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-gen_project_binary-c66de0f82d98fe851c52.json
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:.pio/build/esp32dev/.cmake/api/v1/reply/target-gen_project_binary-f82c250a87cbfef7c262.json
 			"path" : ".pio/build/esp32dev/.bin_timestamp.rule",
-========
-			"path" : "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/bootloader/.bin_timestamp.rule",
->>>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1:.pio/build/esp32dev/bootloader/.cmake/api/v1/reply/target-gen_project_binary-c66de0f82d98fe851c52.json
 			"sourceGroupIndex" : 1
 		}
 	],

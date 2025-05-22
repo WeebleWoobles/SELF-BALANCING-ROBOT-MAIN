@@ -12,11 +12,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-<<<<<<< HEAD
             "executable": "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
-=======
-            "executable": "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
->>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/arien/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
@@ -29,11 +25,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-<<<<<<< HEAD
             "executable": "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
-=======
-            "executable": "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
->>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/arien/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart"
@@ -42,11 +34,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-<<<<<<< HEAD
             "executable": "C:/Users/arien/OneDrive/Documents/GitHub/ecen361/Self-Balancing_Robot/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
-=======
-            "executable": "C:/Users/hiram/Git/SELF-BALANCING-ROBOT-MAIN/.pio/build/esp32dev/firmware.elf",
->>>>>>> c645504f9131a63544b09a08289dc44eb6c51ed1
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/arien/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
