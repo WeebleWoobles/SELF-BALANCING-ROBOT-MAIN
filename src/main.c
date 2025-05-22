@@ -36,69 +36,6 @@ void Init_I2C(void) {
 }
 
 
-// Sensor Interface Module (IMU Data Acquisition)
-//
-// This module will be responsible for interfacing with the IMU sensor
-// and acquiring the necessary data for the robot's balancing algorithm.
-// It will handle the I2C communication and data processing.
-// The module will include functions for initializing the sensor, reading
-// data, and converting raw data into usable formats.
-//
-//  HAL/Scheduler
-
-
-
-// State Estimation and Sensor Fusion (Tilt, Angular Velocity, etc.)
-//
-// This module will be responsible for estimating the robot's state
-// using the data acquired from the IMU sensor. It will implement
-// sensor fusion algorithms (e.g., Kalman filter, complementary filter)
-// to combine data from multiple sensors and provide accurate estimates
-// of tilt angles, angular velocities, and other relevant parameters.
-//
-//  Scheduler
-
-
-
-// Main Control Logic (Balancing and Movement - PID Control)
-//
-// This module will implement the main control logic for the robot.
-// It will use the estimated state from the previous module to determine
-// the necessary motor commands for balancing and movement. The control
-// logic will include PID control algorithms to adjust motor speeds
-// based on the robot's tilt angle and angular velocity. It will also
-// handle user inputs (e.g., from a remote control or Bluetooth) to
-// control the robot's movement and direction.
-//
-//  Scheduler/Config
-
-
-
-// Motor Driver Interface (Actuator Control)
-//
-// This module will be responsible for controlling the motors of the robot.
-// It will interface with the motor driver hardware and implement
-// functions for setting motor speeds and directions. The module will
-// receive commands from the main control logic and translate them into
-// appropriate signals for the motor driver. It will also include
-// functions for monitoring motor status and handling any errors or
-// faults that may occur during operation.
-//
-//  HAL/Scheduler
-
-
-
-// Input Management Module (Bluetooth Xbox Controller Interface)
-//
-// This module will handle the input from the Xbox controller.
-// It will interface with the controller hardware and implement
-// functions for reading button presses, joystick movements, and other
-// inputs. The module will convert the raw input data into usable
-// formats and provide it to the main control logic. It will also
-// handle any necessary debouncing or filtering of the input signals.
-//
-//  HAL/Scheduler
-
 
 
 /* *** INITIALIZE FUNCTIONS DEFINITIONS END *** */

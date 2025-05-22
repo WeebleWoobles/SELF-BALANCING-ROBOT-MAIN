@@ -1,6 +1,14 @@
-#include "driver/gpio.h"    //GPIO Driver
-#include "driver/i2c.h"     //I2C Driver
+#pragma once
 
+#include <stdint.h>
+#include <stdbool.h>
+#include "driver/gpio.h"        //GPIO Driver
+#include "driver/i2c.h"         //I2C Driver
+#include "imu_interface.h"      //IMU Interface
+#include "state_estimation.h"   //State Estimation
+#include "control_logic.h"      //Control Logic
+#include "input_management.h"   //Input Management
+#include "motor_interface.h"    //Motor Interface
 
 
 /* *** PIN ASSIGNMENT DEFINES *** */
