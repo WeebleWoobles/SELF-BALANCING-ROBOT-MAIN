@@ -6,7 +6,6 @@
 *.ko
 *.obj
 *.elf
-*.json
 
 # Linker output
 *.ilk
@@ -53,7 +52,6 @@ Mkfile.old
 dkms.conf
 
 # Archives and logs
-*.json
 *.log
 *.zip
 *.tar
@@ -66,24 +64,25 @@ dkms.conf
 # Backup files
 *~
 *.bak
-*.swp 
+*.swp
 *.swo
 
-# IDE specific files
-*.vscode/
-*.idea/
+# IDE-specific files
+.vscode/
+.idea/
+*.iml  # IntelliJ-specific
+.DS_Store # macOS system file
 
-# CMake specific files
+# CMake-specific files
 CMakeFiles/
 CMakeCache.txt
-CMakeOutput.log 
+CMakeOutput.log
 CMakeError.log
 
-# Qt specific files
+# Qt-specific files
 *.moc
 *.ui
 *.qrc
 
-# Draw.io autosave and backup files
-*.drawio~
+# Draw.io autosave and backup files (Removed unnecessary entries)
 *.drawio.autosave
