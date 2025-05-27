@@ -1,158 +1,257 @@
-#pragma once
-//#include <cstdint>
-#include <stdbool.h>
-#include <stdint.h>
-#include "control_logic.h"
+#include "motor_interface.h"
+#include <stdio.h> 
 
+// mototr state variables(actual values need to be entered)
+static MotorStatus_t current_status = {0.0f, 0.0f, false, false, false};
+static uint8_t speed_limit = MOTOR_MAX_SPEED;
+static bool left_direction = true;  // true = forward false = reverse
+static bool right_direction = true;
+static uint32_t pwm_frequency = 1000; // default PWM frequency
+static float acceleration = 50.0f;    // default acceleration
+static float deceleration = 50.0f;    // deceleration
+static uint8_t control_mode = 0;      // speed mode
+static uint8_t fault_handling_mode = 0; // stop mode
+static bool is_initialized = false;
 
-// Motor Driver Interface (Actuator Control)
-//
-// This module will be responsible for controlling the motors of the robot.
-// It will interface with the motor driver hardware and implement
-// functions for setting motor speeds and directions. The module will
-// receive commands from the main control logic and translate them into
-// appropriate signals for the motor driver. It will also include
-// functions for monitoring motor status and handling any errors or
-// faults that may occur during operation.
-//
-//  HAL/Scheduler
+// mock wrte function, need to put real function calls here
+static void mock_set_motor_speed(uint8_t motor, float speed) {
+    if (motor == 0) { // left motor
+        current_status.speed_left = (speed > speed_limit) ? speed_limit : speed;
+    } else if (motor == 1) { // rite motor
+        current_status.speed_right = (speed > speed_limit) ? speed_limit : speed;
+    }
+}
 
+static void mock_set_motor_direction(uint8_t motor, bool direction) {
+    if (motor == 0) { // left motor
+        left_direction = direction;
+    } else if (motor == 1) { // rite motor
+        right_direction = direction;
+    }
+}
 
-// Motor Interface Parameters
-#define MOTOR_MAX_SPEED        255     // Max PWM value for motor speed
-#define MOTOR_MIN_SPEED        0       // Min PWM value for motor speed
-#define MOTOR_NUM_MOTORS       2       // Number of motors (left, right)
+static void mock_set_pwm_frequency(uint32_t frequency) {
+    pwm_frequency = frequency; // set pwm frequency
+}
 
-// Motor Status Structure
-typedef struct {
-    float speed_left;      // Current speed of left motor
-    float speed_right;     // Current speed of right motor
-    bool fault_left;       // Fault status for left motor
-    bool fault_right;      // Fault status for right motor
-    bool enabled;          // Motors enabled/disabled
-} MotorStatus_t;
-
-// Function Declarations
-
-/**
- * @brief Initialize the motor interface module.
- */
-void MotorInterface_Init(void);
-
-/**
- * @brief Set the motor speeds based on control output.
- * @param[in] output Pointer to ControlOutput_t structure.
- */
-void MotorInterface_SetSpeeds(const ControlOutput_t* output);
+static void mock_check_fault(uint8_t motor) {
+    // fault detection simualtion
+    if (rand() % 100 < 5) { // chnace of fault is 5%
+        if (motor == 0) current_status.fault_left = true;
+        else if (motor == 1) current_status.fault_right = true;
+    }
+}
 
 /**
- * @brief Enable or disable the motors.
- * @param[in] enable True to enable, false to disable.
+ * @brief motor interface module
  */
-void MotorInterface_Enable(bool enable);
+void MotorInterface_Init(void) {
+    if (!is_initialized) {
+        // hardware motor driver mock setup since we dont have it wired yet
+        current_status.enabled = false;
+        is_initialized = true;
+        printf("Motor Interface is init\n");
+    }
+}
 
 /**
- * @brief Check if the motors are enabled.
- * @return True if enabled, false otherwise.
+ * @brief motor speeds based on our control output
+ * @param[in] output pointer to ControlOutput_t struct
  */
-bool MotorInterface_IsEnabled(void);
+void MotorInterface_SetSpeeds(const ControlOutput_t* output) {
+    if (!is_initialized || !current_status.enabled || output == NULL) {
+        return;
+    }
+
+    // apply speeds from control output assuming normalized 0.0 to 1.0
+    float left_speed = output->left_speed * MOTOR_MAX_SPEED;
+    float right_speed = output->right_speed * MOTOR_MAX_SPEED;
+
+    mock_set_motor_speed(0, left_speed);  // left motor
+    mock_set_motor_speed(1, right_speed); // rite motor
+
+    // check for faults after setting speeds
+    mock_check_fault(0);
+    mock_check_fault(1);
+}
 
 /**
- * @brief Get the current motor status.
- * @param[out] status Pointer to MotorStatus_t structure to fill.
+ * @brief motor enable/disable
+ * @param[in] True to enable, false to disable
  */
-void MotorInterface_GetStatus(MotorStatus_t* status);
+void MotorInterface_Enable(bool enable) {
+    if (is_initialized) {
+        current_status.enabled = enable;
+        if (!enable) {
+            current_status.speed_left = 0.0f;
+            current_status.speed_right = 0.0f;
+            mock_set_motor_speed(0, 0.0f);
+            mock_set_motor_speed(1, 0.0f);
+        }
+    }
+}
 
 /**
- * @brief Reset the motor interface (e.g., after a fault or reset event).
+ * @brief Check if the motors are set
+ * @return True if enabled, false disabled
  */
-void MotorInterface_Reset(void);
+bool MotorInterface_IsEnabled(void) {
+    return current_status.enabled;
+}
 
 /**
- * @brief Check for motor faults.
- * @return True if a fault is detected, false otherwise.
+ * @brief Gets motor tatus
+ * @param[out] status pointer to MotorStatus_t struct
  */
-bool MotorInterface_HasFault(void);
+void MotorInterface_GetStatus(MotorStatus_t* status) {
+    if (status != NULL) {
+        *status = current_status;
+    }
+}
 
 /**
- * @brief Set the motor speed limit.
- * @param[in] limit Speed limit (0 to MOTOR_MAX_SPEED).
+ * @brief resets motor interface
  */
-void MotorInterface_SetSpeedLimit(uint8_t limit);
+void MotorInterface_Reset(void) {
+    if (is_initialized) {
+        current_status = (MotorStatus_t){0.0f, 0.0f, false, false, false};
+        speed_limit = MOTOR_MAX_SPEED;
+        left_direction = true;
+        right_direction = true;
+        pwm_frequency = 1000;
+        acceleration = 50.0f;
+        deceleration = 50.0f;
+        control_mode = 0;
+        fault_handling_mode = 0;
+        is_initialized = false;
+        printf("Motor Interface has been reset\n");
+    }
+}
 
 /**
- * @brief Get the current motor speed limit.
- * @return Current speed limit.
+ * @brief Checks if theres motor faults
+ * @return True if a fault is detected, false if no fault is detected
  */
-uint8_t MotorInterface_GetSpeedLimit(void);
+bool MotorInterface_HasFault(void) {
+    return current_status.fault_left || current_status.fault_right;
+}
 
 /**
- * @brief Set the motor direction.
- * @param[in] left_direction Direction for left motor (true for forward, false for reverse).
- * @param[in] right_direction Direction for right motor (true for forward, false for reverse).
+ * @brief Set the speed limit for motor
+ * @param[in] limit Speed limit 0 to MOTOR_MAX_SPEED
  */
-void MotorInterface_SetDirection(bool left_direction, bool right_direction);
+void MotorInterface_SetSpeedLimit(uint8_t limit) {
+    if (limit <= MOTOR_MAX_SPEED) {
+        speed_limit = limit;
+    }
+}
 
 /**
- * @brief Get the current motor direction.
- * @param[out] left_direction Pointer to store left motor direction.
- * @param[out] right_direction Pointer to store right motor direction.
+ * @brief says current motor speed limit
+ * @return current speed limit
  */
-void MotorInterface_GetDirection(bool* left_direction, bool* right_direction);
+uint8_t MotorInterface_GetSpeedLimit(void) {
+    return speed_limit;
+}
 
 /**
- * @brief Set the motor PWM frequency.
- * @param[in] frequency PWM frequency in Hz.
+ * @brief sets motor direction
+ * @param[in] left_direction Direction for left motor true for forward, false for backwards
+ * @param[in] right_direction Direction for rite motor true for forward, false for backwards
  */
-void MotorInterface_SetPWMFrequency(uint32_t frequency);
+void MotorInterface_SetDirection(bool left_direction, bool right_direction) {
+    mock_set_motor_direction(0, left_direction);
+    mock_set_motor_direction(1, right_direction);
+}
 
 /**
- * @brief Get the current motor PWM frequency.
- * @return Current PWM frequency in Hz.
+ * @brief gets motor direction
+ * @param[out] left_direction pointer to store left motor direction
+ * @param[out] right_direction pointer to store rite motor direction
  */
-uint32_t MotorInterface_GetPWMFrequency(void);
+void MotorInterface_GetDirection(bool* left_direction, bool* right_direction) {
+    if (left_direction != NULL) *left_direction = left_direction;
+    if (right_direction != NULL) *right_direction = right_direction;
+}
 
 /**
- * @brief Set the motor acceleration and deceleration rates.
- * @param[in] acceleration Acceleration rate in units per second.
- * @param[in] deceleration Deceleration rate in units per second.
+ * @brief motor pwm freq
+ * @param[in] frequency pwm frequency in Hz.
  */
-void MotorInterface_SetAcceleration(float acceleration, float deceleration);
+void MotorInterface_SetPWMFrequency(uint32_t frequency) {
+    if (frequency > 0) {
+        mock_set_pwm_frequency(frequency);
+    }
+}
 
 /**
- * @brief Get the current motor acceleration and deceleration rates.
- * @param[out] acceleration Pointer to store acceleration rate.
- * @param[out] deceleration Pointer to store deceleration rate.
+ * @brief gets motor pwm frequency
+ * @return current pwm frequency in Hz
  */
-void MotorInterface_GetAcceleration(float* acceleration, float* deceleration);
+uint32_t MotorInterface_GetPWMFrequency(void) {
+    return pwm_frequency;
+}
 
 /**
- * @brief Set the motor control mode (e.g., speed, position).
- * @param[in] mode Control mode (e.g., speed, position).
+ * @brief motor accel/decel
+ * @param[in] acceleration acceleration rate units per second
+ * @param[in] deceleration deceleration rate units per second
  */
-void MotorInterface_SetControlMode(uint8_t mode);
+void MotorInterface_SetAcceleration(float acceleration, float deceleration) {
+    if (acceleration >= 0.0f) this->acceleration = acceleration;
+    if (deceleration >= 0.0f) this->deceleration = deceleration;
+}
 
 /**
- * @brief Get the current motor control mode.
- * @return Current control mode.
+ * @brief get the current motor acceleration and deceleration rates
+ * @param[out] acceleration pointer to store acceleration rate
+ * @param[out] deceleration pointer to store deceleration rate
  */
-uint8_t MotorInterface_GetControlMode(void);
+void MotorInterface_GetAcceleration(float* acceleration, float* deceleration) {
+    if (acceleration != NULL) *acceleration = this->acceleration;
+    if (deceleration != NULL) *deceleration = this->deceleration;
+}
 
 /**
- * @brief Set the motor fault handling mode (e.g., stop, continue).
- * @param[in] mode Fault handling mode (e.g., stop, continue).
+ * @brief motor control mode (speed, position)
+ * @param[in] mode control mode (speed, position).
  */
-void MotorInterface_SetFaultHandlingMode(uint8_t mode);
+void MotorInterface_SetControlMode(uint8_t mode) {
+    control_mode = mode;
+}
 
 /**
- * @brief Get the current motor fault handling mode.
- * @return Current fault handling mode.
+ * @brief gets current motor control mode
+ * @return current control mode
  */
-uint8_t MotorInterface_GetFaultHandlingMode(void);
+uint8_t MotorInterface_GetControlMode(void) {
+    return control_mode;
+}
 
 /**
- * @brief Set the motor fault reset command.
- * @param[in] reset True to reset faults, false to ignore.
+ * @brief set the motor fault handling mode like stop or contirnue 
+ * @param[in] mode fault handling mode like stop and continue
  */
-void MotorInterface_SetFaultReset(bool reset);
+void MotorInterface_SetFaultHandlingMode(uint8_t mode) {
+    fault_handling_mode = mode;
+}
 
+/**
+ * @brief gets current motor fault handling mode
+ * @return current fault handling mode
+ */
+uint8_t MotorInterface_GetFaultHandlingMode(void) {
+    return fault_handling_mode;
+}
+
+/**
+ * @brief sets motor fault reset command
+ * @param[in] reset true to reset faults, false to ignore faults
+ */
+void MotorInterface_SetFaultReset(bool reset) {
+    if (reset && is_initialized) {
+        current_status.fault_left = false;
+        current_status.fault_right = false;
+        printf("Motor faults reset\n");
+    }
+}
