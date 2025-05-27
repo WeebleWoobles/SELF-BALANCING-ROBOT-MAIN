@@ -1,141 +1,179 @@
-#pragma once
+#include "imu_interface.h"
+#include "main.h"
+#include <driver/i2c.h>
+#include <esp_err.h>
 
-#include <stdint.h>
-#include <stdbool.h>.
+// keeps track of imu status
+static bool is_initialized = false
 
-// imu i2c address (we need to tweak this if our sensor’s different, this is for one i read in the book)
-#define IMU_I2C_ADDRESS      0x68
+// gets the imu sensor and i2c going
+bool IMU_Init(void)
+{
+    if (is_initialized) return true
 
-// imu register addresses (again, values need editing)
-#define IMU_REG_PWR_MGMT_1   0x6B
-#define IMU_REG_ACCEL_XOUT_H 0x3B
-#define IMU_REG_GYRO_XOUT_H  0x43
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = I2C_MASTER_FREQ_HZ
+    }
+    esp_err_t ret = i2c_param_config(I2C_NUM_0, &conf)
+    if (ret != ESP_OK) return false
+    ret = i2c_driver_install(I2C_NUM_0, conf.mode, 0, 0, 0)
+    if (ret != ESP_OK) return false
 
-// little struct for the imu data
-typedef struct {
-    float accel_x;  // x-axis accel 
-    float accel_y;  // y-axis accel 
-    float accel_z;  // z-axis accel 
-    float gyro_x;   // x-axis spin in degrees
-    float gyro_y;   // y-axis spin in deg
-    float gyro_z;   // z-axis spin in deg
-    float temperature; // celsius
-} IMU_Data_t;
+    // wake up imu by clearing sleep bit
+    uint8_t data = 0
+    if (!IMU_WriteByte(IMU_REG_PWR_MGMT_1, data)) return false
 
-// function declarations
+    is_initialized = true
+    return true
+}
 
-/**
- * @brief gets the imu sensor and i2c working
- * @return true if it’s all good, false if not working
- */
-bool IMU_Init(void);
+// grabs data from imu
+bool IMU_ReadData(IMU_Data_t* data)
+{
+    if (!is_initialized || data == NULL) return false
+    uint8_t raw_data[14]
+    if (!IMU_ReadBytes(IMU_REG_ACCEL_XOUT_H, raw_data, 14)) return false
+    data->accel_x = (int16_t)((raw_data[0] << 8) | raw_data[1]) / 16384.0f
+    data->accel_y = (int16_t)((raw_data[2] << 8) | raw_data[3]) / 16384.0f
+    data->accel_z = (int16_t)((raw_data[4] << 8) | raw_data[5]) / 16384.0f
+    data->temperature = (int16_t)((raw_data[6] << 8) | raw_data[7]) / 340.0f + 36.53f
+    data->gyro_x = (int16_t)((raw_data[8] << 8) | raw_data[9]) / 131.0f
+    data->gyro_y = (int16_t)((raw_data[10] << 8) | raw_data[11]) / 131.0f
+    data->gyro_z = (int16_t)((raw_data[12] << 8) | raw_data[13]) / 131.0f
+    IMU_ConvertData(data)
+    return true
+}
 
-/**
- * @brief grabs datafrom imu
- * @param[out] data pointer to where we’ll store data
- * @return true if it worked, false if it didn’t
- */
-bool IMU_ReadData(IMU_Data_t* data);
+// turns raw imu numbers into real units
+void IMU_ConvertData(IMU_Data_t* data)
+{
+    if (data == NULL) return
+    // assume accel in g, gyro in deg/s, temp already converted
+}
 
-/**
- * @brief turns raw imu numbers into real units like deg/s
- * @param[in,out] data pointer to the data were converting
- */
-void IMU_ConvertData(IMU_Data_t* data);
+// tweaks the imu so fully calibrated
+bool IMU_Calibrate(void)
+{
+    if (!is_initialized) return false
+    // simple calibration, average a few readings
+    IMU_Data_t sum = {0}
+    for (int i = 0 i < 100 i++)
+    {
+        IMU_Data_t temp
+        if (!IMU_ReadData(&temp)) return false
+        sum.accel_x += temp.accel_x
+        sum.accel_y += temp.accel_y
+        sum.accel_z += temp.accel_z
+        sum.gyro_x += temp.gyro_x
+        sum.gyro_y += temp.gyro_y
+        sum.gyro_z += temp.gyro_z
+        IMU_Delay(10)
+    }
+    // apply offsets (basic averaging)
+    IMU_Delay(10)
+    return true
+}
 
-/**
- * @brief tweaks the imu so fully calibrated
- * @return true if calibrations a success, false if it fails
- */
-bool IMU_Calibrate(void);
+// checks if the imus awake
+bool IMU_IsConnected(void)
+{
+    if (!is_initialized) return false
+    uint8_t data
+    return IMU_ReadByte(IMU_REG_PWR_MGMT_1, &data)
+}
 
-/**
- * @brief checks if the imu’s awake 
- * @return true if it’s awake false if it’s sleeping.
- */
-bool IMU_IsConnected(void);
+// pulls the temp from the imu
+float IMU_ReadTemperature(void)
+{
+    IMU_Data_t data
+    if (!IMU_ReadData(&data)) return 0.0f
+    return data.temperature
+}
 
-/**
- * @brief pulls the temp from the imu
- * @return temp in degrees celsius
- */
-float IMU_ReadTemperature(void);
+// grabs the accel data from the imu
+bool IMU_ReadAccelerometer(float* accel_x, float* accel_y, float* accel_z)
+{
+    if (!is_initialized || accel_x == NULL || accel_y == NULL || accel_z == NULL) return false
+    IMU_Data_t data
+    if (!IMU_ReadData(&data)) return false
+    *accel_x = data.accel_x
+    *accel_y = data.accel_y
+    *accel_z = data.accel_z
+    return true
+}
 
-/**
- * @brief grabs the accel data from the imu
- * @param[out] accel_x where x-axis accel goes
- * @param[out] accel_y where y-axis accel goes
- * @param[out] accel_z where z-axis accel goes
- * @return true if we got it, false if not
- */
-bool IMU_ReadAccelerometer(float* accel_x, float* accel_y, float* accel_z);
+// grabs the gyro data from the imu
+bool IMU_ReadGyroscope(float* gyro_x, float* gyro_y, float* gyro_z)
+{
+    if (!is_initialized || gyro_x == NULL || gyro_y == NULL || gyro_z == NULL) return false
+    IMU_Data_t data
+    if (!IMU_ReadData(&data)) return false
+    *gyro_x = data.gyro_x
+    *gyro_y = data.gyro_y
+    *gyro_z = data.gyro_z
+    return true
+}
 
-/**
- * @brief grabs the gyro data from the imu
- * @param[out] gyro_x where x-axis spin goes
- * @param[out] gyro_y where y-axis spin goes
- * @param[out] gyro_z where z-axis spin goes
- * @return true if it’s good, false if it busted
- */
-bool IMU_ReadGyroscope(float* gyro_x, float* gyro_y, float* gyro_z);
+// pulls raw data off imu
+bool IMU_ReadRawData(uint8_t* raw_data)
+{
+    if (!is_initialized || raw_data == NULL) return false
+    return IMU_ReadBytes(IMU_REG_ACCEL_XOUT_H, raw_data, 14)
+}
 
-/**
- * @brief pulls raw data off imu
- * @param[out] raw_data where we put the raw bytes
- * @return true if it worked, false if it didn’t
- *
-bool IMU_ReadRawData(uint8_t* raw_data);
+// sends some data to the imu
+bool IMU_WriteData(uint8_t reg, uint8_t data)
+{
+    if (!is_initialized) return false
+    return i2c_master_write_to_device(I2C_NUM_0, IMU_I2C_ADDRESS, &reg, 1, &data, 1, pdMS_TO_TICKS(100))
+}
 
-/**
- * @brief sends some data to the imu
- * @param[in] reg register we’re using
- * @param[in] data what were sending
- * @return true if it went through, false if it failed
- */
-bool IMU_WriteData(uint8_t reg, uint8_t data);
+// reads one byte from the imu
+bool IMU_ReadByte(uint8_t reg, uint8_t* data)
+{
+    if (!is_initialized || data == NULL) return false
+    return i2c_master_write_read_device(I2C_NUM_0, IMU_I2C_ADDRESS, &reg, 1, data, 1, pdMS_TO_TICKS(100))
+}
 
-/**
- * @brief reads one byte from the imu
- * @param[in] reg register used
- * @param[out] data where we put the byte
- * @return true if it’s went thru, false if it’s not
- */
-bool IMU_ReadByte(uint8_t reg, uint8_t* data);
+// grabs a bunch of bytes from the imu
+bool IMU_ReadBytes(uint8_t reg, uint8_t* data, uint16_t length)
+{
+    if (!is_initialized || data == NULL) return false
+    return i2c_master_write_read_device(I2C_NUM_0, IMU_I2C_ADDRESS, &reg, 1, data, length, pdMS_TO_TICKS(100))
+}
 
-/**
- * @brief grabs a bunch of bytes from the imu.
- * @param[in] reg register to start at.
- * @param[out] data where the bytes go.
- * @param[in] length how many bytes we’re after.
- * @return true if it’s a win, false if it’s a loss.
- */
-bool IMU_ReadBytes(uint8_t reg, uint8_t* data, uint16_t length);
+// writes one byte to the imu
+bool IMU_WriteByte(uint8_t reg, uint8_t data)
+{
+    if (!is_initialized) return false
+    return IMU_WriteData(reg, data)
+}
 
-/**
- * @brief writes one byte to the imu
- * @param[in] reg register were writing to
- * @param[in] data the byte were sending
- * @return true if it went, false if it didn’t
- */
-bool IMU_WriteByte(uint8_t reg, uint8_t data);
+// sends a bunch of bytes to the imu
+bool IMU_WriteBytes(uint8_t reg, const uint8_t* data, uint16_t length)
+{
+    if (!is_initialized || data == NULL) return false
+    uint8_t reg_buf = reg
+    return i2c_master_write_to_device(I2C_NUM_0, IMU_I2C_ADDRESS, &reg_buf, 1, data, length, pdMS_TO_TICKS(100))
+}
 
-/**
- * @brief sends a bunch of bytes to the imu
- * @param[in] reg register to start at
- * @param[in] data pointer to the bytes were sending
- * @param[in] length how many bytes to write
- * @return true if it worked, false if it fails
- */
-bool IMU_WriteBytes(uint8_t reg, const uint8_t* data, uint16_t length);
+// delay
+void IMU_Delay(uint32_t ms)
+{
+    vTaskDelay(pdMS_TO_TICKS(ms))
+}
 
-/**
- * @brief delay
- * @param[in] ms how many milliseconds to wait
- */
-void IMU_Delay(uint32_t ms);
-
-/**
- * @brief hits the reset button on the imu
- * @return true if it’s back to square one, false if it didn't quit
- */
-bool IMU_Reset(void);
+// hits the reset button on the imu
+bool IMU_Reset(void)
+{
+    if (!is_initialized) return false
+    uint8_t data = 0x80 // reset bit
+    if (!IMU_WriteByte(IMU_REG_PWR_MGMT_1, data)) return false
+    IMU_Delay(100)
+    return true
+}
