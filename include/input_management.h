@@ -1,166 +1,120 @@
 #pragma once
 
-#include "input_management.h"
-#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
 
-// inputs for testing
-static ControllerInput_t current_input = {0};
-static float joystick_deadzone = INPUT_JOYSTICK_DEADZONE;
-static bool is_initialized = false;
-static bool connection_status = false;
+// input management (bluetooth xbox controller interface)
+//
+// hey, this module handles inputs from an xbox controller via bluetooth.
+// it reads button presses, joystick moves, and other goodies, turning raw
+// data into something useful for the main control stuff. it also deals
+// with debouncing and filtering to keep things smooth.
 
-// controller input data
-static void mock_read_input(ControllerInput_t* input) {
-    // this is where we put our deadzone information
-    input->joysticks.left_x = 0.1f;  // replace with actual values
-    input->joysticks.left_y = 0.8f;  
-    input->joysticks.right_x = -0.9f;
-    input->joysticks.right_y = 0.0f;
-    input->buttons = BUTTON_A | BUTTON_B; //testing a and b buttons
-    input->connected = connection_status;
-}
+#define INPUT_JOYSTICK_DEADZONE   0.05f   // deadzone for joystick inputs
+#define INPUT_UPDATE_PERIOD_MS    10      // how often we check inputs in ms
 
-// deadzone values
-static void apply_deadzone(JoystickAxes_t* axes) {
-    if (axes->left_x >= -joystick_deadzone && axes->left_x <= joystick_deadzone) {
-        axes->left_x = 0.0f;
+// xbox controller button definitions (bitmasks for fun)
+#define BUTTON_A      (1 << 0)
+#define BUTTON_B      (1 << 1)
+#define BUTTON_X      (1 << 2)
+#define BUTTON_Y      (1 << 3)
+#define BUTTON_LB     (1 << 4)
+#define BUTTON_RB     (1 << 5)
+#define BUTTON_BACK   (1 << 6)
+#define BUTTON_START  (1 << 7)
 
-    }
-    if (axes->left_y >= -joystick_deadzone && axes->left_y <= joystick_deadzone) {
-        axes->left_y = 0.0f;
+// joystick axes structure
+typedef struct {
+    float left_x;   // left joystick x-axis (-1.0 to 1.0)
+    float left_y;   // left joystick y-axis (-1.0 to 1.0)
+    float right_x;  // right joystick x-axis (-1.0 to 1.0)
+    float right_y;  // right joystick y-axis (-1.0 to 1.0)
+} JoystickAxes_t;
 
+// controller input structure
+typedef struct {
+    JoystickAxes_t joysticks;
+    uint16_t buttons;      // bitmask for button states
+    bool connected;        // is the controller plugged in?
+} ControllerInput_t;
 
-    }
-    
-    if (axes->right_x >= -joystick_deadzone && axes->right_x <= joystick_deadzone) {
-        axes->right_x = 0.0f;
-    }
-   
-   
-    if (axes->right_y >= -joystick_deadzone && axes->right_y <= joystick_deadzone) {
-        axes->right_y = 0.0f;
-    }
-}
+// function declarations
 
 /**
- * @brief input management
+ * @brief kicks off the input management module.
+ * gets everything ready to roll.
  */
-void InputManagement_Init(void) {
-    if (!is_initialized) {
-        // bluetooth connection
-        connection_status = true; // this runs the connetion when initialized
-        is_initialized = true;
-        current_input.connected = true;
-        printf("Input management achieved chaaa\n");
-    }
-}
+void InputManagement_Init(void);
 
 /**
- * @brief usies polling to update controller state
- * @param[out] input pointer to ControllerInput_t struct
- * @return true if inputs updated, false if not
+ * @brief polls and updates the controller state.
+ * grabs the latest input data and tweaks it.
+ * @param[out] input pointer to the controller input struct to fill up.
+ * @return true if it worked, false if it flopped.
  */
-bool InputManagement_Update(ControllerInput_t* input) {
-    if (!is_initialized || !connection_status || input == NULL) {
-        return false;
-    }
-
-    // hardware simaulation
-    mock_read_input(&current_input);
-
-    // joystick value deadzones
-    apply_deadzone(&current_input.joysticks);
-
-    // updated input to structure
-    *input = current_input;
-    return true;
-}
+bool InputManagement_Update(ControllerInput_t* input);
 
 /**
- * @brief is controller connected?
- * @return true or false
+ * @brief checks if the controller is connected.
+ * quick peek to see if we’re linked up.
+ * @return true if connected, false if not.
  */
-bool InputManagement_IsConnected(void) {
-    return connection_status;
-}
+bool InputManagement_IsConnected(void);
 
 /**
- * @brief gets controller input
- * @param[out] input pointer to the ControllerInput_t struct
+ * @brief grabs the latest controller input.
+ * hands over the current input goodies.
+ * @param[out] input pointer to the controller input struct to fill.
  */
-void InputManagement_GetInput(ControllerInput_t* input) {
-    if (input != NULL) {
-        *input = current_input;
-    }
-}
+void InputManagement_GetInput(ControllerInput_t* input);
 
 /**
- * @brief joystick deadzone
- * @param[in] deadzone deadzone values from  0.0 to 1.0
+ * @brief sets the joystick deadzone.
+ * adjusts how much wiggle we ignore on the sticks.
+ * @param[in] deadzone deadzone value (0.0 to 1.0).
  */
-void InputManagement_SetDeadzone(float deadzone) {
-    if (deadzone >= 0.0f && deadzone <= 1.0f) {
-        joystick_deadzone = deadzone;
-    }
-}
+void InputManagement_SetDeadzone(float deadzone);
 
 /**
- * @brief gets deadzone values
- * @return deadzone values
+ * @brief gets the current joystick deadzone.
+ * tells you how much stick movement we skip.
+ * @return deadzone value.
  */
-float InputManagement_GetDeadzone(void) {
-    return joystick_deadzone;
-}
+float InputManagement_GetDeadzone(void);
 
 /**
- * @brief check if a button is pressed
- * @param[in] input pointer to ControllerInput_t struct
- * @param[in] button bitask
- * @return if button pressed, true, false otherwise
+ * @brief checks if a button is pressed.
+ * sees if a specific button is getting mashed.
+ * @param[in] input pointer to the controller input struct.
+ * @param[in] button bitmask to check.
+ * @return true if pressed, false if not.
  */
-bool InputManagement_IsButtonPressed(const ControllerInput_t* input, uint16_t button) {
-    if (input == NULL) {
-        return false;
-    }
-    return (input->buttons & button) != 0;
-}
+bool InputManagement_IsButtonPressed(const ControllerInput_t* input, uint16_t button);
 
 /**
- * @brief joystick axis values
- * @param[in] input pointer to ControllerInput_t struct
- * @param[out] axes pointer to JoystickAxes_t struct
+ * @brief gets the joystick axes values.
+ * pulls the latest stick positions.
+ * @param[in] input pointer to the controller input struct.
+ * @param[out] axes pointer to the joystick axes struct to fill.
  */
-void InputManagement_GetJoystickAxes(const ControllerInput_t* input, JoystickAxes_t* axes) {
-    if (input != NULL && axes != NULL) {
-        *axes = input->joysticks;
-    }
-}
+void InputManagement_GetJoystickAxes(const ControllerInput_t* input, JoystickAxes_t* axes);
 
 /**
- * @brief controller connection status
- * @param[in] connected True if connected, false disconnected
+ * @brief sets the controller connection status.
+ * flips the connected switch.
+ * @param[in] connected true if connected, false if disconnected.
  */
-void InputManagement_SetConnectionStatus(bool connected) {
-    connection_status = connected;
-    current_input.connected = connected;
-}
+void InputManagement_SetConnectionStatus(bool connected);
 
 /**
- * @brief controller connected
- * @return true if connected, false if disconnected
+ * @brief gets the controller connection status.
+ * checks if we’re still chatting with the controller.
+ * @return true if connected, false if not.
  */
-bool InputManagement_GetConnectionStatus(void) {
-    return InputManagement_IsConnected();
-}
+bool InputManagement_GetConnectionStatus(void);
 
 /**
- * @brief reset the input management module after reset or fault
+ * @brief resets the input management module.
+ * wipes the slate clean after a mess or restart.
  */
-void InputManagement_Reset(void) {
-    if (is_initialized) {
-        current_input = (ControllerInput_t){0};
-        connection_status = false;
-        is_initialized = false;
-        printf("Initializing reset for input management\n");
-    }
-}
+void InputManagement_Reset(void);
