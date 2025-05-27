@@ -79,6 +79,7 @@ CMakeFiles/
 CMakeCache.txt
 CMakeOutput.log
 CMakeError.log
+*.cmake
 
 # Qt-specific files
 *.moc
