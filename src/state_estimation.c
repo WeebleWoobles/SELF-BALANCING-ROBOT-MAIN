@@ -1,13 +1,13 @@
 #include "state_estimation.h"
 #include <math.h>
 
-// lil vars to keep track of stuff
+// vars 
 static StateEstimate_t current_state = {0}
 static float filter_k = COMPLEMENTARY_FILTER_K
 static float dt = STATE_ESTIMATION_DT
 static bool is_initialized = false
 
-// kicks off the state estimation module
+// starts the state estimation module
 void StateEstimation_Init(void)
 {
     if (!is_initialized)
@@ -34,11 +34,11 @@ void StateEstimation_Update(const IMU_Data_t* imu_data, StateEstimate_t* state)
     // grab gyro rate (y-axis for pitch)
     float gyro_rate = imu_data->gyro_y
 
-    // save the raw stuff
+    // save the raw data
     current_state.accel_angle = accel_angle
     current_state.gyro_rate = gyro_rate
 
-    // mix em with complementary filter
+    // mix em with complimentary filter
     // tilt = k * (old tilt + gyro rate * dt) + (1-k) * accel angle
     current_state.tilt_angle = filter_k * (current_state.tilt_angle + gyro_rate * dt) + (1 - filter_k) * accel_angle
 
