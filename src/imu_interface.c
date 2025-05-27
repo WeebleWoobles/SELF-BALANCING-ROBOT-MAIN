@@ -1,7 +1,6 @@
 #include "imu_interface.h"
 #include "main.h"
-#include <driver/i2c.h>
-#include <esp_err.h>
+
 
 // keeps track of imu status
 static bool is_initialized = false
