@@ -1,9 +1,9 @@
 #pragma once
 
 #include <stdint.h>
-#include <stdbool.h>.
+#include <stdbool.h>
 
-// imu i2c address (we need to tweak this if our sensor’s different, this is for one i read in the book)
+// imu i2c address 
 #define IMU_I2C_ADDRESS      0x68
 
 // imu register addresses (again, values need editing)
