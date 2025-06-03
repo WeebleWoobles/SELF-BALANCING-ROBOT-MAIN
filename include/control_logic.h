@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include "state_estimation.h"
 #include "input_management.h"
+#include "motor_interface.h"
 
 // main control logic (balancing and movement - pid control)
 //
@@ -29,12 +30,6 @@ typedef struct {
     bool enable;        // enable for robot
     bool emergency_stop;// emergency stop
 } UserInput_t;
-
-// control output structure
-typedef struct {
-    float motor_left;   // left motor command (typically 0.0 to 255.0)
-    float motor_right;  // right motor command (typically 0.0 to 255.0)
-} ControlOutput_t;
 
 // pid params
 typedef struct {

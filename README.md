@@ -9,6 +9,20 @@ MCU (Microcontroller Unit): ESP-WROOM-32
 
 IMU (Inertial Measurment Unit): GY-521 MPU-6050
 
+Motor Driver: L298N
+- Features: Dual H-Bridge, 2A per channel, 46V max voltage, 25W max power, 2.5A peak current
+- Pinout: 
+  - IN1: GPIO 32
+  - IN2: GPIO 33
+  - IN3: GPIO 25
+  - IN4: GPIO 26
+  - ENA: GPIO 27
+  - ENB: GPIO 14
+- Power: 5V to 35V, 2A to 46V, 25W max power
+- Power Supply: 5V to 35V, 2A to 46V, 25W max power
+
+Motors:
+- Type: DC Motors
 
 ## Design
 

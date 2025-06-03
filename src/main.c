@@ -22,7 +22,7 @@ void app_main(void)
 
     // data structs for passing info
     IMU_Data_t imu_data = {0};
-    ControllerInput_t controller_input = {0};
+//    ControllerInput_t controller_input = {0};
     StateEstimate_t state_estimate = {0};
     UserInput_t user_input = {0};
     ControlOutput_t motor_output = {0};
@@ -44,19 +44,19 @@ void app_main(void)
         StateEstimation_Update(&imu_data, &state_estimate);
 
         // update controller input
-        if (!InputManagement_Update(&controller_input))
-        {
-            ESP_LOGW(LOG_TAG, "controller disconnected");
-            user_input.enable = false;
-            user_input.emergency_stop = true;
-        }
-        else
-        {
-            user_input.forward = controller_input.joysticks.left_y;
-            user_input.turn = controller_input.joysticks.right_x;
-            user_input.enable = true;
-            user_input.emergency_stop = InputManagement_IsButtonPressed(&controller_input, BUTTON_B);
-        }
+        // if (!InputManagement_Update(&controller_input))
+        // {
+        //     ESP_LOGW(LOG_TAG, "controller disconnected");
+        //     user_input.enable = false;
+        //     user_input.emergency_stop = true;
+        // }
+        // else
+        // {
+        //     user_input.forward = controller_input.joysticks.left_y;
+        //     user_input.turn = controller_input.joysticks.right_x;
+        //     user_input.enable = true;
+        //     user_input.emergency_stop = InputManagement_IsButtonPressed(&controller_input, BUTTON_B);
+        // }
 
         // set user input for control logic
         ControlLogic_SetUserInput(&user_input);

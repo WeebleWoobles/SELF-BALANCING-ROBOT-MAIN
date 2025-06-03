@@ -17,18 +17,21 @@
 
 // motor status structure
 typedef struct {
-    float speed_left      // current speed of left motor
-    float speed_right     // current speed of right motor
-    bool fault_left       // fault status for left motor
-    bool fault_right      // fault status for right motor
-    bool enabled          // motors on or off
+    float speed_left;      // current speed of left motor
+    float speed_right;     // current speed of right motor
+    bool fault_left;       // fault status for left motor
+    bool fault_right;      // fault status for right motor
+    bool enabled;          // motors on or off
 } MotorStatus_t;
 
 // control output structure
+#ifndef CONTROL_OUTPUT_T_DEFINED
+#define CONTROL_OUTPUT_T_DEFINED
 typedef struct {
-    float left_speed      // speed for left motor (0.0 to 1.0)
-    float right_speed     // speed for right motor (0.0 to 1.0)
+    float motor_left;      // speed for left motor (0.0 to 1.0)
+    float motor_right;     // speed for right motor (0.0 to 1.0)
 } ControlOutput_t;
+#endif
 
 // function declarations
 
