@@ -21,8 +21,10 @@ Motor Driver: L298N
 - Power: 5V to 35V, 2A to 46V, 25W max power
 - Power Supply: 5V to 35V, 2A to 46V, 25W max power
 
-Motors:
-- Type: DC Motors
+Two Motors:
+- Type: 30:1 Metal DC Geared-Down Motor 
+- Brand: CQRobot
+- Model: CQR37D12V64EN-D
 
 ## Design
 
